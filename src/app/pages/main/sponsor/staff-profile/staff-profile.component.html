@@ -1,0 +1,661 @@
+<div class="page-inner with-breadcrumb layout-md">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Staff Management</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+        </ol>
+    </nav>
+    <section class="section-row">
+        <div class="card-wrapper">
+            <div class="inner-body">
+                <div class="tab-wrapper">
+                    <tabset class="light-tab-nav tab-nav-equal">
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <span class="icon-user-line icons-cell">
+                                    </span>
+                                    <label>
+                                        Account
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                <section class="section-row">
+                                    <div class="form-wrapper">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-5 col-lg-4 col-xl-3">
+                                                    <div
+                                                        class="user-pic-blc account-tab d-flex flex-column align-items-center text-center layout-md">
+                                                        <div
+                                                            class="user-pic d-inline-flex flex-column justify-content-center">
+                                                            <div class="pic-cell rounded-circle">
+                                                                <img class="img-fluid rounded-circle"
+                                                                    src="../../../../../assets/images/user2.png"
+                                                                    alt="User">
+                                                            </div>
+                                                            <div class="txt-cell">
+                                                                Robert Wilson
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-primary2 position-relative upload-btn">
+                                                            Upload Photo
+                                                            <input type="file" class="position-absolute">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-9 form-view-mode">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="participantCode">
+                                                                    Participant Code
+                                                                </label>
+                                                                <input disabled id="participantCode"
+                                                                    type="participantCode" name="name1"
+                                                                    class="form-control">
+                                                                <div class="invalid-feedback">
+                                                                    Field Error Message.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="lastLogin">
+                                                                    Last Login
+                                                                </label>
+                                                                <input disabled id="lastLogin" type="lastLogin"
+                                                                    name="name1" class="form-control">
+                                                                <div class="invalid-feedback">
+                                                                    Field Error Message.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="username">
+                                                                    Username
+                                                                </label>
+                                                                <input id="username" type="username" name="name1"
+                                                                    class="form-control">
+                                                                <div class="invalid-feedback">
+                                                                    Field Error Message.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="activeInactive">
+                                                                    Active/Inactive
+                                                                </label>
+                                                                <input id="activeInactive" type="activeInactive"
+                                                                    name="name1" class="form-control">
+                                                                <div class="invalid-feedback">
+                                                                    Field Error Message.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="blockUnblock">
+                                                                    Block/Unblock
+                                                                </label>
+                                                                <input id="blockUnblock" type="blockUnblock"
+                                                                    name="name1" class="form-control">
+                                                                <div class="invalid-feedback">
+                                                                    Field Error Message.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 link-row">
+                                                            <a href="">Change Password</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </tab>
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <span class="icon-user-line icons-cell">
+                                    </span>
+                                    <label>
+                                        Demographic
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                <section class="section-row">
+                                    <div class="form-wrapper">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="firstName">
+                                                            First Name
+                                                        </label>
+                                                        <input id="firstName" type="text" name="firstName"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="lastName">
+                                                            Last Name
+                                                        </label>
+                                                        <input id="lastName" type="text" name="lastName"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="dateBirth">
+                                                            Date of Birth
+                                                        </label>
+                                                        <input id="dateBirth" type="text" name="dateBirth"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="gender">
+                                                            Gender
+                                                        </label>
+                                                        <select class="form-select form-control" id="gender">
+                                                            <option selected>www.abc.com</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="race">
+                                                            Race
+                                                        </label>
+                                                        <select class="form-select form-control" id="race">
+                                                            <option selected>www.abc.com</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="ethnicity">
+                                                            Ethnicity
+                                                        </label>
+                                                        <select class="form-select form-control" id="ethnicity">
+                                                            <option selected>www.abc.com</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="preferredLanguage">
+                                                            Preferred Language of communication
+                                                        </label>
+                                                        <input id="preferredLanguage" type="text"
+                                                            name="preferredLanguage" class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="contactNumber">
+                                                            Contact Number
+                                                        </label>
+                                                        <input id="contactNumber" type="number" name="contactNumber"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="streetAddress1">
+                                                            Street Address 1
+                                                        </label>
+                                                        <input id="streetAddress1" type="text" name="streetAddress1"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="streetAddress2">
+                                                            Street Address 2
+                                                        </label>
+                                                        <input id="streetAddress2" type="text" name="streetAddress2"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="city">
+                                                            City
+                                                        </label>
+                                                        <input id="city" type="text" name="city" class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="state">
+                                                            State
+                                                        </label>
+                                                        <input id="state" type="text" name="state" class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="zipCode">
+                                                            Zip
+                                                        </label>
+                                                        <input id="zipCode" type="text" name="zipCode"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-button-rw text-end form-btns mt-3">
+                                                <button class="btn btn-primary">
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </tab>
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <span class="icon-settting icons-cell">
+                                    </span>
+                                    <label>
+                                        Qualifications
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                <section class="section-row">
+                                    <div class="form-wrapper">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="school">
+                                                            School
+                                                        </label>
+                                                        <input id="school" type="text" name="school"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="degree">
+                                                            Degree
+                                                        </label>
+                                                        <input id="degree" type="text" name="degree"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="fieldStudy">
+                                                            Field Of Study
+                                                        </label>
+                                                        <input id="fieldStudy" type="text" name="fieldStudy"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="startDate">
+                                                            Start Date
+                                                        </label>
+                                                        <select class="form-select form-control" id="gender">
+                                                            <option selected>www.abc.com</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="endDate">
+                                                            End date
+                                                        </label>
+                                                        <select class="form-select form-control" id="endDate">
+                                                            <option selected>www.abc.com</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label for="description">
+                                                            Description
+                                                        </label>
+                                                        <textarea id="description" type="text" name="description"
+                                                            class="form-control"></textarea>
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-7">
+                                                    <div class="form-group">
+                                                        <label for="description">
+                                                            Upload Document
+                                                        </label>
+                                                        <div class="upload-file-blc d-flex">
+                                                            <div class="left-col flex-fill">
+                                                                <div class="browse-file-blc d-flex position-relative">
+                                                                    <input class="form-control position-absolute"
+                                                                        type="file" id="attachment" multiple>
+                                                                    <button
+                                                                        class="btn btn-link position-relative text-decoration-none">
+                                                                        Choose File
+
+                                                                    </button>
+                                                                    <div
+                                                                        class="input-cell d-flex align-items-center flex-fill">
+                                                                        <span>No file chosen</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="msg">
+                                                                    Accepted File Type: JPG, PNG, doc and Docx
+                                                                    only
+                                                                </div>
+                                                            </div>
+                                                            <div class="right-col">
+                                                                <button class="btn btn-primary">
+                                                                    Save <span class="responsive">Uploded File</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>
+                                <section class="section-row">
+                                    <div class="card-wrapper">
+                                        <div class="inner-body">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">School</th>
+                                                            <th scope="col">Degree</th>
+                                                            <th scope="col">Field Of Study</th>
+                                                            <th scope="col">Grade</th>
+                                                            <th scope="col">Start Date</th>
+                                                            <th scope="col">End Date</th>
+                                                            <th scope="col" class="action-col">Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr *ngFor="let item of tempItem">
+                                                            <td>XYZ</td>
+                                                            <td>BSc</td>
+                                                            <td>Computer</td>
+                                                            <td class="text-center">A</td>
+                                                            <td>20/7/2011</td>
+                                                            <td>20/7/2011</td>
+                                                            <td>
+                                                                <div class="action-cell">
+                                                                    <a href="#" class="doc">
+                                                                        <span class="icon-doc-line"></span>
+                                                                    </a>
+                                                                    <a href="#" class="view">
+                                                                        <span class="icon-eye"></span>
+                                                                    </a>
+                                                                    <a href="#" class="edit">
+                                                                        <span class="icon-edit"></span>
+                                                                    </a>
+                                                                    <a href="#" class="delete text-danger-dark">
+                                                                        <span class="icon-trash2"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </tab>
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <span class="icon-settting icons-cell">
+                                    </span>
+                                    <label>
+                                        Experience
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                Experience
+                            </div>
+                        </tab>
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <span class="icon-settting icons-cell">
+                                    </span>
+                                    <label>
+                                        Office Detail
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                <section class="section-row">
+                                    <div class="form-wrapper">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="officeName">
+                                                            Office Name
+                                                        </label>
+                                                        <input id="officeName" type="text" name="officeName"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="officeAddress">
+                                                            Office Address
+                                                        </label>
+                                                        <input id="officeAddress" type="text" name="officeAddress"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="departmentName">
+                                                            Department Name
+                                                        </label>
+                                                        <input id="departmentName" type="text" name="departmentName"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="city">
+                                                            City
+                                                        </label>
+                                                        <select class="form-select form-control" id="city">
+                                                            <option selected>www.abc.com</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="state">
+                                                            State
+                                                        </label>
+                                                        <select class="form-select form-control" id="state">
+                                                            <option selected>www.abc.com</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="country">
+                                                            Country
+                                                        </label>
+                                                        <input id="country" type="text" name="country"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="officeEmailId">
+                                                            Office Email Id
+                                                        </label>
+                                                        <input id="officeEmailId" type="email" name="officeEmailId"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="officeContactNo">
+                                                            Office Contact No
+                                                        </label>
+                                                        <input id="officeContactNo" type="email" name="officeContactNo"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Field Error Message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-btns text-end mt-2">
+                                                <button class="btn btn-primary">
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </tab>
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <span class="icon-settting icons-cell">
+                                    </span>
+                                    <label>
+                                        History
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                History
+                            </div>
+                        </tab>
+                    </tabset>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

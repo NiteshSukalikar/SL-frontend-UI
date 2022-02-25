@@ -1,0 +1,62 @@
+<div class="page-inner">
+  <section class="section-row">
+    <div class="card-wrapper flat">
+      <div class="head-blc">
+        <h2>Manage Sponsor</h2>
+      </div>
+      <div class="inner-body padd layout-md">
+        <div class="list-filter inputs-thin inputs-primary">
+          <div class="list-srch d-inline-flex align-items-center">
+            <h3>Search</h3>
+            <input type="text" class="form-control" name="search" (change)="onSearchSponsor($event)" 
+              placeholder="Enter Sponsor Name or Email Address">
+              <button class="btn btn-lg btn-primary ms-2" (click)="onSearchSponsor($event)" type="button">Search</button>
+          </div>
+        </div>
+        <div class="list-btns text-end">
+          <button class="btn btn-primary" (click)="addSponsorToList()">
+            Add Sponsor
+          </button>
+        </div>
+        <div class="table-responsive">
+          <table class="table" *ngIf="tempItem?.length > 0">
+            <thead>
+              <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Email</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of tempItem | paginate: { itemsPerPage: 10, currentPage: p }">
+                <td>{{item?.organizationName}}</td>
+                <td>{{item?.businessName}}</td>
+                <td>{{item?.primaryContactNumber}}</td>
+                <td>{{item?.emailAddress}}</td>
+                <td>
+                  <div class="action-cell">
+                    <a type="button" class="edit" (click)="edit(item)">
+                      <span class="icon-edit"></span>
+                    </a>
+                    <a class="delete text-danger" (click)="delete(item)">
+                      <span class="fa fa-trash"></span>
+                  </a>
+                  <a class="view" (click)="view(item)">
+                    <span class="icon-eye"></span>
+                </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+            <div class="clearfix">
+              <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+          </table>
+          <table class="table text-center" *ngIf="tempItem?.length == 0 ">No such Sponsor exists.</table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

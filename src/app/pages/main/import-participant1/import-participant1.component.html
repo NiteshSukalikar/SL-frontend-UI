@@ -1,0 +1,149 @@
+<div class="page-inner">
+    <section class="section-row">
+        <div class="card-wrapper flat">
+            <div class="head-blc d-flex align-items-center">
+                <h2>Import Data</h2>
+                <div class="right-col ms-auto">
+                    <button class="btn btn-btn-link back-btn d-inline-flex align-items-center">
+                        <span class="icon-arrow-left"></span>
+                        Back
+                    </button>
+                </div>
+            </div>
+            <div class="inner-body padd layout-md">
+                <div class="source-search d-flex">
+                    <div class="left flex-fill">
+                        <div class="form-group source-input d-flex mb-0 align-items-end">
+                            <div class="left flex-fill">
+                                <label for="source">Source</label>
+                                <select class="form-select form-control" id="source">
+                                    <option selected>www.abc.com</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <div class="invalid-feedback">This Feild is Required.</div>
+                            </div>
+                            <div class="right">
+                                <button class="btn btn-primary">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-btns multiple">
+                    <button class="btn btn-outline-primary">
+                        Import Selected
+                    </button>
+                    <button class="btn btn-outline-primary">
+                        Delete Selected
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="list-check-col">
+                                    <label class="checkbox-cell type2 d-flex">
+                                        <input type="checkbox" name="remember" class="position-absolute" />
+                                        <span class="d-inline-flex align-items-center justify-content-center icon">
+                                            <span class="icon-check"></span>
+                                        </span>
+                                    </label>
+                                </th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Status</th>
+                                <th scope="col" class="action-col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of item">
+                                <td class="list-check-col">
+                                    <label class="checkbox-cell type2 d-flex">
+                                        <input type="checkbox" name="remember" class="position-absolute" />
+                                        <span class="d-inline-flex align-items-center justify-content-center icon">
+                                            <span class="icon-check"></span>
+                                        </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    Philippe
+                                </td>
+                                <td>Bayock</td>
+                                <td>philippebayock@yopmail.com</td>
+                                <td>
+                                    <span class="d-inline-block status-cell bg-warning2">
+                                        Duplicate
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="action-cell">
+                                        <a href="#" class="view">
+                                            <span class="icon-eye"></span>
+                                        </a>
+                                        <a href="#" class="delete text-danger">
+                                            <span class="icon-trash2"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr *ngFor="let item of item2">
+                                <td class="list-check-col">
+                                    <label class="checkbox-cell type2 d-flex">
+                                        <input type="checkbox" name="remember" class="position-absolute" />
+                                        <span class="d-inline-flex align-items-center justify-content-center icon">
+                                            <span class="icon-check"></span>
+                                        </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    Philippe
+                                </td>
+                                <td>Bayock</td>
+                                <td>philippebayock@yopmail.com</td>
+                                <td>
+                                    <span class="d-inline-block status-cell bg-danger-dark">
+                                        Error
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="action-cell">
+                                        <a href="#" class="view">
+                                            <span class="icon-eye"></span>
+                                        </a>
+                                        <a href="#" class="delete text-danger">
+                                            <span class="icon-trash2"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="foot-blc text-end">
+                <a href="#">
+                    View all patients
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6.628" height="6.364" viewBox="0 0 6.628 6.364">
+                            <g id="Group_8625" data-name="Group 8625" transform="translate(-1316 -629.667)">
+                                <g id="arrow-point-to-right" transform="translate(1218.861 629.667)">
+                                    <path id="Path_870" data-name="Path 870"
+                                        d="M100.636,3.5,97.9,6.233a.446.446,0,1,1-.63-.63L99.69,3.182,97.269.761A.446.446,0,0,1,97.9.13l2.737,2.737a.446.446,0,0,1,0,.63Z" />
+                                </g>
+                                <g id="arrow-point-to-right-2" data-name="arrow-point-to-right"
+                                    transform="translate(1221.861 629.667)">
+                                    <path id="Path_870-2" data-name="Path 870"
+                                        d="M100.636,3.5,97.9,6.233a.446.446,0,1,1-.63-.63L99.69,3.182,97.269.761A.446.446,0,0,1,97.9.13l2.737,2.737a.446.446,0,0,1,0,.63Z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>

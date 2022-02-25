@@ -1,0 +1,138 @@
+<div class="page-inner">
+    <div class="card-wrapper">
+        <div class="head-blc">
+            <h2>Participant List</h2>
+        </div>
+        <div class="inner-body padd2 layout-md">
+            <div class="section-row">
+                <div class="card-wrapper2">
+                    <div class="head-blc2 d-flex flex-wrap">
+                        <h2>Search</h2>
+                        <div class="rt-col ms-auto">
+                            <button class="btn btn-primary">
+                                Clear
+                            </button>
+                            <button class="btn btn-primary">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                    <div class="inner-body">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <label for="keywords">Keywords</label>
+                                    <div class="input-cell right position-relative">
+                                        <input type="text" name="keywords" id="keywords" class="form-control">
+                                        <span
+                                            class="icon right-align icon-search position-absolute d-inline-flex align-items-center justify-content-center"></span>
+                                    </div>
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <label for="icCode">ICD Code</label>
+                                    <div class="input-cell right position-relative">
+                                        <input type="text" name="icCode" id="icCode" class="form-control">
+                                        <span
+                                            class="icon icon-search position-absolute d-inline-flex align-items-center justify-content-center"></span>
+                                    </div>
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <label for="conditions">Conditions</label>
+                                    <div class="input-cell right position-relative">
+                                        <input type="text" name="conditions" id="conditions" class="form-control">
+                                        <span
+                                            class="icon icon-search position-absolute d-inline-flex align-items-center justify-content-center"></span>
+                                    </div>
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" name="firstName" id="firstName" class="form-control">
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" name="lastName" id="lastName" class="form-control">
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" class="form-control">
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="form-group">
+                                    <label for="phoneNo">Phone No</label>
+                                    <input type="text" name="phoneNo" id="phoneNo" class="form-control">
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="form-group">
+                                    <label for="participantCode">Participant Code</label>
+                                    <input type="text" name="participantCode" id="participantCode" class="form-control">
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="form-group">
+                                    <label for="group">Group</label>
+                                    <select class="form-select form-control" id="group"
+                                        aria-label="Default select example">
+                                        <option selected>Group</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="form-group">
+                                    <label for="status">Status</label>
+                                    <select class="form-select form-control" id="status"
+                                        aria-label="Default select example">
+                                        <option selected>Status</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-row">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-4" *ngFor="let i of item">
+                        <app-profile-breif-card></app-profile-breif-card>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center pagination-wrapper">
+                    <div class="left mb-2">
+                        Showing 1 to 6 of 16 entries
+                    </div>
+                    <div class="right d-flex ms-auto mb-2">
+                        <pagination [totalItems]="66" (pageChanged)="pageChanged($event)">
+                        </pagination>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

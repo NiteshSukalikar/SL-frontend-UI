@@ -1,0 +1,51 @@
+.breif-wrapper {
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+  .breif-card {
+    border-radius: 10px 10px 0 0;
+    padding: 27px 15px;
+    margin-right: 23px;
+    flex: 1 !important;
+    opacity: 1;
+    transition: all ease 0.3 0s;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+    @media (max-width: 1200px) {
+      width: calc(50% - 23px);
+      flex: none !important;
+      margin-bottom: 23px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-right: 0;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .left {
+      h2 {
+        font-size: 40px;
+        margin: 0 15px 0 0;
+        min-height: 51px;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+    .right {
+      .icons-cell {
+        color: #fff;
+      }
+      .icon1 {
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

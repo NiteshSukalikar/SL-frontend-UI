@@ -1,0 +1,62 @@
+<div class="page-inner">
+  <section class="section-row">
+    <div class="card-wrapper flat">
+      <div class="head-blc">
+        <h2>Manage Email Template</h2>
+      </div>
+      <div class="inner-body padd layout-md">      
+        <div class="list-btns text-end">
+          <button class="btn btn-primary" (click)="addEmailTemplate()">
+            Add Email Template
+          </button>
+        </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Template Name</th>
+                <th scope="col">Template Subject</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let emailTemplate of tempData | paginate: { itemsPerPage: 10, currentPage: p }">
+                <td>{{emailTemplate?.emailTemplateName}}</td>
+                <td>{{emailTemplate?.emailTemplateSubject}}</td>               
+              <td>
+                <button (click)="inactiveEmailTemplate(emailTemplate)" type="button"
+                    class="btn btn-link toggle-cell shadow-none icon active position-relative overflow-hidden d-inline-flex statusButton">
+                    <span class="toggle-cell-inner w-100 h-100 position-absolute d-inline-flex"
+                        [ngClass]="{'flip': status}">
+                        <span class="toggle-cell-rw d-flex h-100">
+                            <span class="text">
+                                {{emailTemplate?.isActive == true ? 'Active' : 'Inactive'}}
+                            </span>
+                            <span
+                                [ngClass]="{'icn icon-check bg-primary2':emailTemplate?.isActive  == true, 'icn icon-cross-round bg-secondary': emailTemplate?.isActive  == false}"></span>
+                        </span>
+                    </span>
+                </button>
+            </td>
+                <td>
+                  <div class="action-cell">
+                    <a type="button" class="edit" (click)="edit(emailTemplate)">
+                      <span class="icon-edit"></span>
+                    </a>
+                    <a class="delete text-danger" type="button" (click)="delete(emailTemplate)">
+                      <span class="fa fa-trash"></span>
+                  </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+            <div class="clearfix">
+              <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

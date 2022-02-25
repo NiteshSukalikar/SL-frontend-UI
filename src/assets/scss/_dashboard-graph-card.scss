@@ -1,0 +1,93 @@
+@import "../scss/theme/variables";
+
+.row-lg {
+  margin-left: -20px;
+  margin-right: -20px;
+  > * {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.dash-graph-col {
+  margin-bottom: 12px;
+  .card-wrapper {
+    height: 331px;
+    @media (max-width: 991px) {
+      height: auto;
+    }
+    > .head-blc {
+      padding: 8px 10px;
+      h2 {
+        font-size: 18px;
+      }
+    }
+    .collpase-body {
+      .inner-body {
+        height: 286px;
+        @media (max-width: 991px) {
+          height: auto;
+        }
+      }
+      .inner-body.padd {
+        padding: 16px;
+      }
+    }
+  }
+}
+.dash-graph-col.dash-graph-col-list {
+  .card-wrapper {
+    height: 315px;
+    @media (max-width: 991px) {
+      height: auto;
+    }
+    > .head-blc {
+      padding: 8px 10px;
+      h2 {
+        font-size: 18px;
+      }
+    }
+    .collpase-body {
+      .inner-body {
+        height: 273px;
+        @media (max-width: 991px) {
+          height: auto;
+        }
+      }
+      .inner-body.padd {
+        padding: 16px;
+      }
+    }
+  }
+}
+
+.dash-graph-col {
+  .card-wrapper.card-collapse {
+    > .head-blc {
+      padding-top: 0;
+      padding-bottom: 0;
+      .btn {
+        height: 40px;
+      }
+    }
+  }
+}
+
+.task-list {
+  .item {
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+    .text {
+      flex: 1;
+      margin-right: 20px;
+      @media (max-width: 480px) {
+        margin-right: 0;
+      }
+    }
+    .time {
+      @media (max-width: 480px) {
+        margin-left: unset !important;
+      }
+    }
+  }
+}

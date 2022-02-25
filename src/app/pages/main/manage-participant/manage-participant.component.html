@@ -1,0 +1,208 @@
+<div class="page-inner">
+    <section class="section-row breif-rw">
+        <app-participant-breif-card></app-participant-breif-card>
+    </section>
+    <section class="section-row">
+        <div class="card-wrapper flat">
+            <div class="head-blc">
+                <h2>Lastest Update</h2>
+            </div>
+            <div class="inner-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Code</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Status</th>
+                                <th scope="col" class="action-col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    PP-001
+                                </td>
+                                <td>Philippe Bayock</td>
+                                <td>philippebayock@yopmail.com</td>
+                                <td>+91234567890</td>
+                                <td>
+                                    <button
+                                        class="btn btn-link toggle-cell shadow-none icon active position-relative overflow-hidden d-inline-flex"
+                                        (click)="statusHandler()">
+                                        <span class="toggle-cell-inner w-100 h-100 position-absolute d-inline-flex"
+                                            [ngClass]="{'flip': status}">
+                                            <span class="toggle-cell-rw d-flex h-100">
+                                                <span class="text">
+                                                    Block
+                                                </span>
+                                                <span class="icn icon-check bg-danger-dark"></span>
+                                            </span>
+                                            <span class="toggle-cell-rw d-flex h-100">
+                                                <span class="icn icon-cross-round bg-secondary"></span>
+                                                <span class="text">
+                                                    Unblock
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="action-cell">
+                                        <a href="#" class="view">
+                                            <span class="icon-eye"></span>
+                                        </a>
+                                        <a href="#" class="delete text-danger">
+                                            <span class="icon-trash2"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PP-001
+                                </td>
+                                <td>Philippe Bayock</td>
+                                <td>philippebayock@yopmail.com</td>
+                                <td>+91234567890</td>
+                                <td>
+                                    <button
+                                        class="btn btn-link toggle-cell shadow-none icon active position-relative overflow-hidden d-inline-flex"
+                                        (click)="statusHandler()">
+                                        <span class="toggle-cell-inner w-100 h-100 position-absolute d-inline-flex"
+                                            [ngClass]="{'flip': status}">
+                                            <span class="toggle-cell-rw d-flex h-100">
+                                                <span class="text">
+                                                    Active
+                                                </span>
+                                                <span class="icn icon-check bg-primary2"></span>
+                                            </span>
+                                            <span class="toggle-cell-rw d-flex h-100">
+                                                <span class="icn icon-cross-round bg-secondary"></span>
+                                                <span class="text">
+                                                    Inactive
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="action-cell">
+                                        <a href="#" class="view">
+                                            <span class="icon-eye"></span>
+                                        </a>
+                                        <a href="#" class="delete text-danger">
+                                            <span class="icon-trash2"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="foot-blc text-end">
+                <a href="#">
+                    View all patients
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6.628" height="6.364" viewBox="0 0 6.628 6.364">
+                            <g id="Group_8625" data-name="Group 8625" transform="translate(-1316 -629.667)">
+                                <g id="arrow-point-to-right" transform="translate(1218.861 629.667)">
+                                    <path id="Path_870" data-name="Path 870"
+                                        d="M100.636,3.5,97.9,6.233a.446.446,0,1,1-.63-.63L99.69,3.182,97.269.761A.446.446,0,0,1,97.9.13l2.737,2.737a.446.446,0,0,1,0,.63Z" />
+                                </g>
+                                <g id="arrow-point-to-right-2" data-name="arrow-point-to-right"
+                                    transform="translate(1221.861 629.667)">
+                                    <path id="Path_870-2" data-name="Path 870"
+                                        d="M100.636,3.5,97.9,6.233a.446.446,0,1,1-.63-.63L99.69,3.182,97.269.761A.446.446,0,0,1,97.9.13l2.737,2.737a.446.446,0,0,1,0,.63Z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section-row">
+        <div class="card-wrapper flat">
+            <div class="head-blc">
+                <h2>New Participants</h2>
+            </div>
+            <div class="inner-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Source</th>
+                                <th scope="col" class="action-col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Philippe Bayock
+                                </td>
+                                <td>philippebayock@yopmail.com</td>
+                                <td>+91234567890</td>
+                                <td>+Source1</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <a href="#" class="view">
+                                            <span class="icon-eye"></span>
+                                        </a>
+                                        <a href="#" class="delete text-danger">
+                                            <span class="icon-trash2"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Philippe Bayock
+                                </td>
+                                <td>philippebayock@yopmail.com</td>
+                                <td>+91234567890</td>
+                                <td>+Source1</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <a href="#" class="view">
+                                            <span class="icon-eye"></span>
+                                        </a>
+                                        <a href="#" class="delete text-danger">
+                                            <span class="icon-trash2"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="foot-blc text-end">
+                <a href="#">
+                    View all Participant
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6.628" height="6.364" viewBox="0 0 6.628 6.364">
+                            <g id="Group_8625" data-name="Group 8625" transform="translate(-1316 -629.667)">
+                                <g id="arrow-point-to-right" transform="translate(1218.861 629.667)">
+                                    <path id="Path_870" data-name="Path 870"
+                                        d="M100.636,3.5,97.9,6.233a.446.446,0,1,1-.63-.63L99.69,3.182,97.269.761A.446.446,0,0,1,97.9.13l2.737,2.737a.446.446,0,0,1,0,.63Z" />
+                                </g>
+                                <g id="arrow-point-to-right-2" data-name="arrow-point-to-right"
+                                    transform="translate(1221.861 629.667)">
+                                    <path id="Path_870-2" data-name="Path 870"
+                                        d="M100.636,3.5,97.9,6.233a.446.446,0,1,1-.63-.63L99.69,3.182,97.269.761A.446.446,0,0,1,97.9.13l2.737,2.737a.446.446,0,0,1,0,.63Z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>

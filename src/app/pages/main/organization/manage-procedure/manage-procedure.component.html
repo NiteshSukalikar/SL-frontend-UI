@@ -1,0 +1,90 @@
+<div class="page-inner layout-md with-breadcrumb">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Master</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Manage Procedure</li>
+        </ol>
+    </nav>
+    <section class="section-row">
+        <div class="card-wrapper">
+            <div class="head-blc">
+                <h2>Manage Procedure</h2>
+            </div>
+            <div class="inner-body padd2">
+                <div class="tab-wrapper">
+                    <tabset class="tab-nav-start tab-content-padd-type2">
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <label>
+                                        Procedure
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                <div class="invite-wrapper">
+                                    <section class="section-row">
+                                        <div class="list-btns text-end">
+                                            <button class="btn btn-primary">
+                                                Add New
+                                            </button>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="width: 150px;">Sr. No.</th>
+                                                        <th scope="col">Procedure</th>
+                                                        <th scope="col" class="action-col text-center">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor="let item of tempItem">
+                                                        <td>01</td>
+                                                        <td>Informed Consent</td>
+                                                        <td class="text-center">
+                                                            <div class="action-cell">
+                                                                <a href="#" class="edit">
+                                                                    <span class="icon-edit"></span>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </tab>
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <label>
+                                        Non-Procedure
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                Non-Procedure
+                            </div>
+                        </tab>
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <label>
+                                        Additional Charges
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                Additional Charges
+                            </div>
+                        </tab>
+                    </tabset>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

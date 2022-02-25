@@ -1,0 +1,82 @@
+<div class="page-inner with-breadcrumb layout-md">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Audit Log</li>
+        </ol>
+    </nav>
+    <section class="section-row">
+        <div class="card-wrapper layout-md">
+            <div class="head-blc">
+                <h2>Audit Log</h2>
+            </div>
+            <div class="inner-body padd2">
+                <div class="title-desc">
+                    Module name : <span>Screening</span>
+                </div>
+                <div class="card-wrapper">
+                    <div class="inner-body padd2">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Last Action</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Username</th>
+                                        <th scope="col">IP Address</th>
+                                        <th scope="col">API Name</th>
+                                        <th scope="col" class="action-col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of tempItem">
+                                        <td>
+                                            <span class="btn btn-primary status-cell">
+                                                Update
+                                            </span>
+                                        </td>
+                                        <td>14/6/2021 9:00 AM</td>
+                                        <td>Jasmine More</td>
+                                        <td>192.10.10.1</td>
+                                        <td>Get Study Details</td>
+                                        <td>
+                                            <div class="action-cell">
+                                                <a href="#" class="comment">
+                                                    <span class="icon-chat-line"></span>
+                                                </a>
+                                                <a href="#" class="doc-duble">
+                                                    <span class="icon-doc-duble"></span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr *ngFor="let item of tempItem">
+                                        <td>
+                                            <span class="btn btn-success status-cell">
+                                                Add
+                                            </span>
+                                        </td>
+                                        <td>14/6/2021 9:00 AM</td>
+                                        <td>Jasmine More</td>
+                                        <td>192.10.10.1</td>
+                                        <td>Get Study Details</td>
+                                        <td>
+                                            <div class="action-cell">
+                                                <a href="#" class="comment">
+                                                    <span class="icon-chat-line"></span>
+                                                </a>
+                                                <a href="#" class="doc-duble">
+                                                    <span class="icon-doc-duble"></span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

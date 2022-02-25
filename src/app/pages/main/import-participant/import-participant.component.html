@@ -1,0 +1,91 @@
+<div class="page-inner">
+    <section class="section-row">
+        <div class="card-wrapper flat">
+            <div class="head-blc">
+                <h2>Import Data</h2>
+            </div>
+            <div class="inner-body padd layout-md">
+                <div class="source-search d-flex">
+                    <div class="left flex-fill">
+                        <div class="form-group source-input d-flex mb-0 align-items-end">
+                            <div class="left flex-fill">
+                                <label for="source">Source</label>
+                                <select class="form-select form-control" id="source">
+                                    <option selected>www.abc.com</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <div class="invalid-feedback">This Feild is Required.</div>
+                            </div>
+                            <div class="right">
+                                <button class="btn btn-primary">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right ms-auto">
+                        <label>Last import date : 20/7/2021 - 11:45 AM</label>
+                    </div>
+                </div>
+                <div class="list-btns">
+                    <button class="btn btn-primary light apply-filter-btn">
+                        Apply Filter
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col" class="action-col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of item">
+                                <td>
+                                    Philippe
+                                </td>
+                                <td>Bayock</td>
+                                <td>philippebayock@yopmail.com</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <a href="#" class="view">
+                                            <span class="icon-eye"></span>
+                                        </a>
+                                        <a href="#" class="delete text-danger">
+                                            <span class="icon-trash2"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="foot-blc text-end">
+                <a href="#">
+                    View all patients
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6.628" height="6.364" viewBox="0 0 6.628 6.364">
+                            <g id="Group_8625" data-name="Group 8625" transform="translate(-1316 -629.667)">
+                                <g id="arrow-point-to-right" transform="translate(1218.861 629.667)">
+                                    <path id="Path_870" data-name="Path 870"
+                                        d="M100.636,3.5,97.9,6.233a.446.446,0,1,1-.63-.63L99.69,3.182,97.269.761A.446.446,0,0,1,97.9.13l2.737,2.737a.446.446,0,0,1,0,.63Z" />
+                                </g>
+                                <g id="arrow-point-to-right-2" data-name="arrow-point-to-right"
+                                    transform="translate(1221.861 629.667)">
+                                    <path id="Path_870-2" data-name="Path 870"
+                                        d="M100.636,3.5,97.9,6.233a.446.446,0,1,1-.63-.63L99.69,3.182,97.269.761A.446.446,0,0,1,97.9.13l2.737,2.737a.446.446,0,0,1,0,.63Z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>

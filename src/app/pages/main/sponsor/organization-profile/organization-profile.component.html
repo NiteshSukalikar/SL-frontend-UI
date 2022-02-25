@@ -1,0 +1,481 @@
+<div class="page-inner layout-md">
+    <section class="section-row">
+        <div class="card-wrapper">
+            <div class="head-blc">
+                <h2>Organization Profile</h2>
+            </div>
+            <div class="inner-body">
+                <div class="tab-wrapper organization-tabs">
+                    <div class="inner">
+                        <div class="row">
+                            <div class="col-md-5 col-lg-4 col-xl-3">
+                                <div
+                                    class="user-pic-blc organization account-tab d-flex flex-column align-items-center text-center">
+                                    <div class="user-pic d-inline-flex flex-column justify-content-center">
+                                        <div class="pic-cell rounded-circle">
+                                            <img class="img-fluid rounded-circle"
+                                                src="../../../../../assets/images/company-pic.png" alt="Company">
+                                        </div>
+                                        <div class="txt-cell">
+                                            Robert Wilson
+                                        </div>
+                                    </div>
+                                    <button class="btn position-relative upload-btn">
+                                        Upload Photo
+                                        <input type="file" class="position-absolute">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-lg-8 col-xl-9">
+                                <tabset class="tab-nav-start">
+                                    <tab>
+                                        <ng-template tabHeading>
+                                            <span class="d-inline-flex flex-column text-center nav-btn-cell">
+                                                <span class="icon-user icons-cell">
+                                                </span>
+                                                <label class="txt-cell">
+                                                    Person
+                                                    <span class="d-block">
+                                                        Information
+                                                    </span>
+                                                </label>
+                                            </span>
+                                        </ng-template>
+                                        <div class="tab-inner">
+                                            <div class="form-wrapper">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="email">
+                                                                Email
+                                                            </label>
+                                                            <input id="email" type="email" name="name1"
+                                                                class="form-control">
+                                                            <div class="invalid-feedback">
+                                                                Field Error Message.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="contactNo">
+                                                                Contact No
+                                                            </label>
+                                                            <input id="contactNo" type="number" name="contactNo"
+                                                                class="form-control">
+                                                            <div class="invalid-feedback">
+                                                                Field Error Message.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="streetAddress1">
+                                                                Street Address 1
+                                                            </label>
+                                                            <input id="streetAddress1" type="streetAddress1"
+                                                                name="streetAddress1" class="form-control">
+                                                            <div class="invalid-feedback">
+                                                                Field Error Message.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="streetAddress2">
+                                                                Street Address 2
+                                                            </label>
+                                                            <input id="streetAddress2" type="streetAddress2"
+                                                                name="streetAddress2" class="form-control">
+                                                            <div class="invalid-feedback">
+                                                                Field Error Message.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="row">
+                                                            <div class="col-xl-4">
+                                                                <div class="form-group">
+                                                                    <label for="city">
+                                                                        City
+                                                                    </label>
+                                                                    <input id="city" type="text" name="city"
+                                                                        class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-4">
+                                                                <div class="form-group">
+                                                                    <label for="state">
+                                                                        State
+                                                                    </label>
+                                                                    <input id="state" type="text" name="state"
+                                                                        class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-4">
+                                                                <div class="form-group">
+                                                                    <label for="zipCode">
+                                                                        Zip Code
+                                                                    </label>
+                                                                    <input id="zipCode" type="number" name="zipCode"
+                                                                        class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 text-center form-btns">
+                                                        <button class="btn btn-primary">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tab>
+                                    <tab>
+                                        <ng-template tabHeading>
+                                            <span class="d-inline-flex flex-column text-center nav-btn-cell">
+                                                <span class="icon-user icons-cell">
+                                                </span>
+                                                <label class="txt-cell">
+                                                    Person
+                                                    <span class="d-block">
+                                                        Details
+                                                    </span>
+                                                </label>
+                                            </span>
+                                        </ng-template>
+                                        <div class="tab-inner">
+                                            <div class="form-wrapper">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <label for="jobTitle">
+                                                                Job Title
+                                                            </label>
+                                                            <input id="jobTitle" type="text" name="jobTitle"
+                                                                class="form-control">
+                                                            <div class="invalid-feedback">
+                                                                Field Error Message.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-12 add-input-item profile d-flex">
+                                                        <div class="left-col flex-fill">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group">
+                                                                        <label for="specialty">
+                                                                            Specialty
+                                                                        </label>
+                                                                        <input id="specialty" type="text"
+                                                                            name="specialty" class="form-control">
+                                                                        <div class="invalid-feedback">
+                                                                            Field Error Message.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group">
+                                                                        <label for="subSpecialty">
+                                                                            Sub Specialty
+                                                                        </label>
+                                                                        <input id="subSpecialty" type="subSpecialty"
+                                                                            name="subSpecialty" class="form-control">
+                                                                        <div class="invalid-feedback">
+                                                                            Field Error Message.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-col d-flex align-items-start">
+                                                            <button
+                                                                class="btn btn-link text-decoration-none shadow-none add">
+                                                                <span class="icon-plus-round"></span>
+                                                            </button>
+                                                            <button
+                                                                class="btn btn-link text-decoration-none shadow-none text-danger-dark">
+                                                                <span class="icon-minus-round"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <label for="research">
+                                                                Therapeutic areas of clinical research experience:
+                                                            </label>
+                                                            <textarea id="research" class="form-control"></textarea>
+                                                            <div class="invalid-feedback">
+                                                                Field Error Message.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="row">
+                                                            <div class="col-xl-6">
+                                                                <div class="form-group">
+                                                                    <label for="subInvestigation">
+                                                                        Will you be accepting sub-investigators ?
+                                                                    </label>
+                                                                    <div class="options-row d-flex profile">
+                                                                        <div class="option-col">
+                                                                            <label
+                                                                                class="d-inline-flex radiobox-cell position-relative">
+                                                                                <input type="radio" name="option1"
+                                                                                    class="position-absolute">
+                                                                                <span
+                                                                                    class="icon d-inline-flex align-items-center justify-content-center rounded-circle">
+                                                                                    <span
+                                                                                        class="d-inline-flex rounded-circle"></span>
+                                                                                </span>
+                                                                                <span class="txt">
+                                                                                    Yes
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="option-col">
+                                                                            <label
+                                                                                class="d-inline-flex radiobox-cell position-relative">
+                                                                                <input type="radio" name="option1"
+                                                                                    class="position-absolute">
+                                                                                <span
+                                                                                    class="icon d-inline-flex align-items-center justify-content-center rounded-circle">
+                                                                                    <span
+                                                                                        class="d-inline-flex rounded-circle"></span>
+                                                                                </span>
+                                                                                <span class="txt">
+                                                                                    No
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="form-group">
+                                                                    <label for="researchExpereince">
+                                                                        Years of clinical research Experience:
+                                                                    </label>
+                                                                    <input id="researchExpereince" type="text"
+                                                                        name="researchExpereince" class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <label for="research">
+                                                                Principal CV:
+                                                            </label>
+                                                            <div
+                                                                class="drag-drop-wrapper d-flex align-items-center justify-content-center">
+                                                                <div class="text-cell">
+                                                                    Drag and drop or
+                                                                    <button
+                                                                        class="btn btn-link position-relative shadow-none browse-btn">
+                                                                        browse
+                                                                        <input type="file" class="position-absolute">
+                                                                    </button>
+                                                                    your files
+                                                                </div>
+                                                            </div>
+                                                            <div class="invalid-feedback">
+                                                                Field Error Message.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="researchSiteName">
+                                                                Research Site Name:
+                                                            </label>
+                                                            <input id="researchSiteName" type="text"
+                                                                name="researchSiteName" class="form-control">
+                                                            <div class="invalid-feedback">
+                                                                Field Error Message.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label for="researchSite1">
+                                                                        Research Site Address1:
+                                                                    </label>
+                                                                    <input id="researchSite1" type="text"
+                                                                        name="researchSite1" class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label for="researchSite2">
+                                                                        Research Site Address2:
+                                                                    </label>
+                                                                    <input id="researchSite2" type="text"
+                                                                        name="researchSite2" class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <label for="researchSiteCity">
+                                                                        Research Site City
+                                                                    </label>
+                                                                    <input id="researchSiteCity" type="text"
+                                                                        name="researchSiteCity" class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <label for="researchSiteState">
+                                                                        Research Site State
+                                                                    </label>
+                                                                    <input id="researchSiteState" type="text"
+                                                                        name="researchSiteState" class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <label for="researchZipCode">
+                                                                        Research Site Zip Code
+                                                                    </label>
+                                                                    <input id="researchZipCode" type="text"
+                                                                        name="researchZipCode" class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label for="researchSiteTelephone:">
+                                                                        Research Site telephone:
+                                                                    </label>
+                                                                    <input id="researchSiteTelephone:" type="text"
+                                                                        name="researchSiteTelephone:"
+                                                                        class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label for="researchSiteFax">
+                                                                        Research Site fax:
+                                                                    </label>
+                                                                    <input id="researchSiteFax" type="text"
+                                                                        name="researchSiteFax" class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label for="site1">
+                                                                        Email of Contact Person at research Site:
+                                                                    </label>
+                                                                    <input id="site1" type="text" name="site1"
+                                                                        class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label for="site2">
+                                                                        Telephone of contact person at research site
+                                                                    </label>
+                                                                    <input id="site2" type="text" name="site2"
+                                                                        class="form-control">
+                                                                    <div class="invalid-feedback">
+                                                                        Field Error Message.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 text-center form-btns mt-3">
+                                                        <button class="btn btn-primary">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tab>
+                                    <tab>
+                                        <ng-template tabHeading>
+                                            <span class="d-inline-flex flex-column text-center nav-btn-cell">
+                                                <span class="icon-payment-hand-coin">
+                                                    <span class="path1"></span>
+                                                    <span class="path2"></span>
+                                                    <span class="path3"></span>
+                                                    <span class="path4"></span>
+                                                    <span class="path5"></span>
+                                                </span>
+                                                <label class="txt-cell">
+                                                    Payment
+                                                    <span class="d-block">
+                                                        Information
+                                                    </span>
+                                                </label>
+                                            </span>
+                                        </ng-template>
+                                        <div class="tab-inner">
+                                            Payment Information
+                                        </div>
+                                    </tab>
+                                </tabset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

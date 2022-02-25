@@ -1,0 +1,106 @@
+<div class="page-inner">
+  <section class="section-row">
+    <div class="card-wrapper flat">
+      <div class="head-blc d-flex align-items-center">
+        <h2>Add Participant</h2>
+        <div class="right-col ms-auto">
+          <button routerLink="/user/new-participant" class="btn btn-btn-link back-btn d-inline-flex align-items-center">
+            <span class="icon-arrow-left"></span>
+            Back
+          </button>
+        </div>
+      </div>
+      <div class="inner-body">
+        <div class="tab-wrapper">
+          <tabset>
+            <tab>
+              <ng-template tabHeading>
+                <span class="d-inline-flex flex-column text-center">
+                  <span class="icon-user icons-cell">
+                  </span>
+                  <label>
+                    Add Participant
+                  </label>
+                </span>
+              </ng-template>
+              <form [formGroup]="participantForm">
+                <div class="tab-inner">
+                  <div class="section-row">
+                    <div class="form-wrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="firstName">
+                              First Name<span class="text-danger">*</span>
+                            </label>
+                            <input id="firstName" type="text" name="firstName" formControlName="firstName"
+                              class="form-control">
+                            <div *ngIf="submitted && participantForm.controls.firstName.errors" class="text-danger">
+                              <div class="text-danger" *ngIf="participantForm.controls.firstName.errors?.required">
+                                First Name is required.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="lastName">
+                              Last Name<span class="text-danger">*</span>
+                            </label>
+                            <input id="lastName" type="text" name="lastName" formControlName="lastName"
+                              class="form-control">
+                            <div *ngIf="submitted && participantForm.controls.lastName.errors" class="text-danger">
+                              <div class="text-danger" *ngIf="participantForm.controls.lastName.errors?.required">
+                                Last Name is required.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="contact">
+                              Contact Number<span class="text-danger">*</span>
+                            </label>
+                            <input id="contact" type="text" name="contact" formControlName="contact" maxlength="10"
+                              class="form-control">
+                            <div *ngIf="submitted && participantForm.controls.contact.errors" class="text-danger">
+                              <div class="text-danger" *ngIf="participantForm.controls.contact.errors?.required">
+                                Contact Number is required.
+                              </div>
+                              <div class="text-danger" *ngIf="participantForm.controls.contact.errors?.pattern">
+                                Please, Enter 10 digit Contact Number.
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="email">
+                              Email Address<span class="text-danger">*</span>
+                            </label>
+                            <input id="email" type="email" name="email" formControlName="email"
+                              class="form-control">
+                            <div *ngIf="submitted && participantForm.controls.email.errors" class="text-danger">
+                              <div class="text-danger" *ngIf="participantForm.controls.email.errors?.required">
+                                Email Address is required.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-end form-btns">
+                      <button class="btn btn-primary" type="button" (click)="onSubmit('save')">
+                        Save
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </tab>
+          </tabset>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

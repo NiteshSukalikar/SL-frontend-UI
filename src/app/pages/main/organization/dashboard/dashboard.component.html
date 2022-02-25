@@ -1,0 +1,165 @@
+<div class="page-inner">
+    <section class="section-row breif-col-rw2">
+        <app-breif-cards></app-breif-cards>
+    </section>
+    <section class="section-row dash-graph-rw">
+        <section class="md row row-lg">
+            <div class="col-xl-4 dash-graph-col">
+                <div class="card-wrapper card-collapse flat md d-flex flex-column overflow-auto"
+                    [ngClass]="{'active': isCollapsed}">
+                    <div class="head-blc d-flex align-items-center">
+                        <h2>Trial Status</h2>
+                        <div class="right-col ms-auto">
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none p-0 d-inline-flex align-items-center justify-content-center toggle-btn"
+                                (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+                                aria-controls="collapseBasic">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none  p-0 d-inline-flex align-items-center justify-content-center close-btn">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collpase-body" id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+                        <div class="inner-body padd overflow-auto">
+                            Trial Status
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 dash-graph-col">
+                <div class="card-wrapper card-collapse flat md d-flex flex-column overflow-auto"
+                    [ngClass]="{'active': isCollapsed2}">
+                    <div class="head-blc d-flex align-items-center">
+                        <h2>Clinical Trial Payments</h2>
+                        <div class="right-col ms-auto">
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none p-0 d-inline-flex align-items-center justify-content-center toggle-btn"
+                                (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed2"
+                                aria-controls="collapseBasic3">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none  p-0 d-inline-flex align-items-center justify-content-center close-btn">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collpase-body" id="collapseBasic3" [collapse]="isCollapsed2" [isAnimated]="true">
+                        <div class="inner-body padd overflow-auto">
+                            Clinical Trial Payments
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 dash-graph-col">
+                <div class="card-wrapper card-collapse flat md d-flex flex-column overflow-auto"
+                    [ngClass]="{'active': isCollapsed3}">
+                    <div class="head-blc d-flex align-items-center">
+                        <h2>Trial Count By Phase</h2>
+                        <div class="right-col ms-auto">
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none p-0 d-inline-flex align-items-center justify-content-center toggle-btn"
+                                (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3"
+                                aria-controls="collapseBasic3">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none  p-0 d-inline-flex align-items-center justify-content-center close-btn">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collpase-body" id="collapseBasic3" [collapse]="isCollapsed3" [isAnimated]="true">
+                        <div class="inner-body padd overflow-auto">
+                            Trial Count By Phase
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="section-row md row row-lg">
+        <div class="col-xl-6 dash-graph-col">
+            <div class="card-wrapper flat md d-flex flex-column overflow-auto">
+                <div class="head-blc">
+                    <h2>Participant Per Stage</h2>
+                </div>
+                <div class="inner-body padd overflow-auto">
+                    Participant Per Stage
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 dash-graph-col">
+            <div class="card-wrapper flat md d-flex flex-column overflow-auto">
+                <div class="head-blc">
+                    <h2>Enrollment</h2>
+                </div>
+                <div class="inner-body padd overflow-auto">
+                    Enrollment
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-row md">
+        <div class="card-wrapper">
+            <div class="head-blc d-flex align-items-center">
+                <h2>Calendar</h2>
+                <div class="right-col ms-auto">
+                    <a href="" class="text-decoration-underline">Schedule</a>
+                </div>
+            </div>
+            <div class="inner-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Organization Name</th>
+                                <th scope="col">Contact Name</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Email</th>
+                                <th scope="col" class="action-col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of tempItem">
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <span
+                                            class="icons-cell d-flex align-items-center justify-content-center rounded-circle">
+                                            <img class="img-fluid" src="../../../../../assets/images/listing-logo.png"
+                                                alt="Logo" />
+                                        </span>
+                                        Mindful Medical
+                                    </div>
+
+                                </td>
+                                <td>Philippe Bayock</td>
+                                <td>202-555-0138</td>
+                                <td>mindfulmedical@gmail.com</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <a href="#" class="edit">
+                                            <span class="icon-edit"></span>
+                                        </a>
+                                        <a href="#" class="database">
+                                            <span class="icon-database"></span>
+                                        </a>
+                                        <a href="#" class="mail">
+                                            <span class="icon-envelope-email"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="foot-blc text-end">
+                <a href="#">View All Organizations</a>
+            </div>
+        </div>
+    </section>
+</div>

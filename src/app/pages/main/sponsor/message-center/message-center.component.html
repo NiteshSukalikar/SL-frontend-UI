@@ -1,0 +1,170 @@
+<div class="page-inner layout-md">
+    <section class="section-row">
+        <div class="card-wrapper">
+            <div class="head-blc">
+                <h2>Message Center</h2>
+            </div>
+            <div class="inner-body padd2">
+                <div class="message-wrapper">
+                    <div class="message-menu d-flex">
+                        <button class="btn btn-link shadow-none text-decoration-none d-inline-flex align-items-center">
+                            <span class="icon-inbox"></span>
+                            <span class="txt-cell">Inbox</span>
+                        </button>
+                        <button class="btn btn-link shadow-none text-decoration-none d-inline-flex align-items-center">
+                            <span class="icon-send"></span>
+                            <span class="txt-cell">Sent</span>
+                        </button>
+                        <button class="btn btn-link shadow-none text-decoration-none d-inline-flex align-items-center">
+                            <span class="icon-trash2"></span>
+                            <span class="txt-cell">Trash</span>
+                        </button>
+                        <button class="btn btn-link shadow-none text-decoration-none d-inline-flex align-items-center">
+                            <span class="icon-star"></span>
+                            <span class="txt-cell">Favourites</span>
+                        </button>
+                    </div>
+                    <div class="message-list-blc">
+                        <div class="head d-flex">
+                            <button class="btn btn-link compose-btn text-decoration-none shadow-none rounded-0">
+                                <span class="icon-edit-pencil"></span>
+                                Compose New Mail
+                            </button>
+                            <div class="search-blc position-relative d-flex align-items-center flex-fill">
+                                <input type="text" name="search" placeholder="Search...." class="flex-fill">
+                                <span class="icon-search position-absolute">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="filter-blc d-flex">
+                            <div class="left-col d-flex align-items-center">
+                                <label class="checkbox-cell md d-flex align-items-center">
+                                    <input type="checkbox" name="remember" class="position-absolute" />
+                                    <span
+                                        class="d-inline-flex align-items-center justify-content-center icon rounded-0">
+                                        <span class="icon-check"></span>
+                                    </span>
+                                    <span class="txt">Select All</span>
+                                </label>
+                                <div class="sort-dropdown">
+                                    <div class="btn-group" dropdown placement="bottom right">
+                                        <button id="button-basic" dropdownToggle type="button"
+                                            class="btn btn-link dropdown-toggle text-decoration-none shadow-none d-inline-flex align-items-center"
+                                            aria-controls="sort-dropdown">
+                                            <span class="icon-sort icons-cell"></span>
+                                            <span class="txt-cell">Date</span>
+                                            <span class="icon-angle-down arrow-icon"></span>
+                                        </button>
+                                        <ul id="sort-dropdown" *dropdownMenu class="dropdown-menu" role="menu">
+                                            <li role="menuitem">
+                                                <a class="dropdown-item" href="#">
+                                                    15/5/2021
+                                                </a>
+                                            </li>
+                                            <li role="menuitem">
+                                                <a class="dropdown-item" href="#">
+                                                    15/5/2021
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col d-flex align-items-center ms-auto">
+                                <button class="btn btn-link text-decoration-none d-inline-flex align-items-center">
+                                    <span class="icon-eye-line-close"></span>
+                                    Read/Unread
+                                </button>
+                                <button class="btn btn-link text-decoration-none d-inline-flex align-items-center">
+                                    <span class="icon-trash2"></span>
+                                    Trash
+                                </button>
+                            </div>
+                        </div>
+                        <div class="message-list overflow-auto">
+                            <div class="list-item d-flex" *ngFor="let item of messageItem">
+                                <div class="left-col d-flex align-items-start">
+                                    <label class="checkbox-cell md d-flex align-items-center cell">
+                                        <input type="checkbox" name="remember" class="position-absolute" />
+                                        <span
+                                            class="d-inline-flex align-items-center justify-content-center icon rounded-0">
+                                            <span class="icon-check"></span>
+                                        </span>
+                                    </label>
+                                    <button
+                                        class="btn btn-link shadow-none cell icons-cell text-decoration-none favourite"
+                                        [ngClass]="{'on': favourite}" (click)="favouriteHandler()">
+                                        <span class="icon-star"></span>
+                                    </button>
+                                    <button class="btn btn-link shadow-none cell icons-cell text-decoration-none lock">
+                                        <span class="icon-lock"></span>
+                                    </button>
+                                    <label class="txt-cell cell">
+                                        Nicholas Warren
+                                        <span class="d-block">
+                                            Welcome on Board
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="right-col ms-auto">
+                                    <span class="time">6.05 PM</span>
+                                </div>
+                            </div>
+                            <div class="list-item d-flex active">
+                                <div class="left-col d-flex align-items-start">
+                                    <label class="checkbox-cell md d-flex align-items-center cell">
+                                        <input checked type="checkbox" name="remember" class="position-absolute" />
+                                        <span
+                                            class="d-inline-flex align-items-center justify-content-center icon rounded-0">
+                                            <span class="icon-check"></span>
+                                        </span>
+                                    </label>
+                                    <button
+                                        class="btn btn-link shadow-none cell icons-cell text-decoration-none favourite"
+                                        [ngClass]="{'on': favourite}" (click)="favouriteHandler()">
+                                        <span class="icon-star"></span>
+                                    </button>
+                                    <button class="btn btn-link shadow-none cell icons-cell text-decoration-none lock">
+                                        <span class="icon-lock"></span>
+                                    </button>
+                                    <label class="txt-cell cell">
+                                        Nicholas Warren
+                                        <span class="d-block">
+                                            Welcome on Board
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="right-col ms-auto">
+                                    <span class="time">6.05 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foot d-flex">
+                            <div class="left-col d-flex align-items-center">
+                                Click here to
+                                <button class="btn btn-link shadow-none">
+                                    Reply
+                                </button>
+                                or
+                                <button class="btn btn-link shadow-none">
+                                    Forward
+                                </button>
+                                Message
+                            </div>
+                            <div class="right-col ms-auto">
+                                <button class="btn btn-link shadow-none msg-send text-decoration-none">
+                                    <span class="icon-send"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Temporary-Div -->
+<div class="temp-div layout-md d-flex" style="padding:40px; ">
+    <button type="button" class="btn btn-primary" (click)="openModal()">Audit Log modal</button>
+</div>

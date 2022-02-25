@@ -1,0 +1,180 @@
+<div class="page-inner layout-md with-breadcrumb">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Manage Sponsor</li>
+        </ol>
+    </nav>
+    <section class="section-row">
+        <div class="card-wrapper">
+            <div class="head-blc">
+                <h2>Manage Sponsor</h2>
+            </div>
+            <div class="inner-body padd2">
+                <section class="section-row">
+                    <div class="card-wrapper2 shadow">
+                        <div class="head-blc2">
+                            <h2>Search</h2>
+                        </div>
+                        <div class="inner-body layout-md">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" name="firstName" id="firstName" class="form-control">
+                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" name="lastName" id="lastName" class="form-control">
+                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="mail" name="email" id="email" class="form-control">
+                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="clinicalStudy">Clinical Study</label>
+                                        <select class="form-select form-control" id="gender">
+                                            <option selected>www.abc.com</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-btns multiple no-label">
+                                        <button class="btn btn-primary">
+                                            Clear
+                                        </button>
+                                        <button class="btn btn-primary">
+                                            Search
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-row">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sponsor Name</th>
+                                    <th scope="col">Study Name</th>
+                                    <th scope="col">Organization Name</th>
+                                    <th scope="col">Invite Sent</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col" class="action-col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of tempItem">
+                                    <td>
+                                        <a href="">
+                                            Philippe Bayock
+                                        </a>
+                                    </td>
+                                    <td>COVID-19 Study</td>
+                                    <td>Mindful Medical</td>
+                                    <td>06-06-2021, 1:00 PM</td>
+                                    <td>
+                                        <span class="d-inline-block status-cell bg-success-dark">
+                                            Accepted
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="action-cell">
+                                            <a href="#" class="view">
+                                                <span class="icon-eye"></span>
+                                            </a>
+                                            <a href="#" class="manage">
+                                                <span>
+                                                    <span class="icon-manage text-warning-dark">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                        <span class="path3"></span><span class="path4"></span>
+                                                        <span class="path5"></span><span class="path6"></span>
+                                                        <span class="path7"></span><span class="path8"></span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="user-multiple-line text-info">
+                                                <span class="icon-user-group-line2"></span>
+                                            </a>
+                                            <a href="#" class="resend">
+                                                <span class="icon-resend">
+                                                    <img src="../../../../../assets/images/icons/resend.png"
+                                                        alt="Resend">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr *ngFor="let item of tempItem">
+                                    <td>
+                                        <a href="">
+                                            Philippe Bayock
+                                        </a>
+                                    </td>
+                                    <td>COVID-19 Study</td>
+                                    <td>Mindful Medical</td>
+                                    <td>06-06-2021, 1:00 PM</td>
+                                    <td>
+                                        <span class="d-inline-block status-cell bg-danger-dark">
+                                            Reject
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="action-cell">
+                                            <a href="#" class="view">
+                                                <span class="icon-eye"></span>
+                                            </a>
+                                            <a href="#" class="manage">
+                                                <span>
+                                                    <span class="icon-manage text-warning-dark">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                        <span class="path3"></span><span class="path4"></span>
+                                                        <span class="path5"></span><span class="path6"></span>
+                                                        <span class="path7"></span><span class="path8"></span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="user-multiple-line text-info">
+                                                <span class="icon-user-group-line2"></span>
+                                            </a>
+                                            <a href="#" class="resend">
+                                                <span class="icon-resend">
+                                                    <img src="../../../../../assets/images/icons/resend.png"
+                                                        alt="Resend">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex align-items-center pagination-wrapper mt-4">
+                        <div class="left mb-2">
+                            Showing 1 to 6 of 16 entries
+                        </div>
+                        <div class="right d-flex ms-auto mb-2">
+                            <pagination [totalItems]="66" (pageChanged)="pageChanged($event)">
+                            </pagination>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</div>

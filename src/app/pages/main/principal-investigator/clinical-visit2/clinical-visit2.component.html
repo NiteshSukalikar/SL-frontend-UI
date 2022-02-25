@@ -1,0 +1,2184 @@
+<div class="page-inner layout-md">
+    <section class="section-row">
+        <div class="card-wrapper flat">
+            <div class="head-blc">
+                <h2>Visit</h2>
+            </div>
+            <div class="inner-body padd2">
+                <section class="section-row">
+                    <div class="user-visit-profile d-flex align-items-center">
+                        <div class="left-col ">
+                            <div class="profile-cell d-flex align-items-center">
+                                <div class="pic-cell"><img src="../../../../../assets/images/user.png" alt="User"
+                                        class="img-fluid"></div>
+                                <div class="txt-cell">
+                                    <h3 class="text-primary">Robert Wilson</h3>
+                                    <h4> Patient ID: PP-001 </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-col ms-auto">
+                            <button class="btn btn-outline-primary white"> View Costing </button>
+                        </div>
+                    </div>
+                </section>
+                <div class="section-inner user-visit-form">
+                    <div class="section-row">
+                        <div class="form-blc-rw d-flex align-items-center">
+                            <label>
+                                Date
+                            </label>
+                            <div class="form-col-rt flex-fill">
+                                <div class="calendar-inputs">
+                                    <div class="form-group">
+                                        <div class="input-cell right d-flex position-relative">
+                                            <span
+                                                class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-calendar"></span>
+                                            </span>
+                                            <input bsDatepicker type="text" name="dateofBirth" id="dateofBirth"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-blc-rw d-flex align-items-center">
+                            <label>
+                                Type of visit
+                            </label>
+                            <div class="form-col-rt flex-fill checkbox-cell-list d-flex flex-wrap">
+                                <label class="checkbox-cell d-flex align-items-center">
+                                    <input type="checkbox" name="InOffice" class="position-absolute" />
+                                    <span class="d-inline-flex align-items-center justify-content-center icon">
+                                        <span class="icon-check"></span>
+                                    </span>
+                                    <span class="txt">In-office</span>
+                                </label>
+                                <label class="checkbox-cell d-flex align-items-center">
+                                    <input checked type="checkbox" name="teleHealth" class="position-absolute" />
+                                    <span class="d-inline-flex align-items-center justify-content-center icon">
+                                        <span class="icon-check"></span>
+                                    </span>
+                                    <span class="txt">Telehealth</span>
+                                </label>
+                                <label class="checkbox-cell d-flex align-items-center">
+                                    <input type="checkbox" name="phone" class="position-absolute" />
+                                    <span class="d-inline-flex align-items-center justify-content-center icon">
+                                        <span class="icon-check"></span>
+                                    </span>
+                                    <span class="txt">Phone</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-section-ttl primary">
+                            <h3>
+                                Visit 1
+                            </h3>
+                            <div class="section-inner">
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Informed Consent Signed
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Name of Person Performing the Consent
+                                    </label>
+                                    <div class="form-col-rt flex-fill">
+                                        <div class="form-group">
+                                            <select class="form-select form-control dropdown-opt-cell" id="source"
+                                                aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Patient given copy of signed consent
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Inclusion Criteria
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Exclusion Criteria
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Gender
+                                    </label>
+                                    <div class="form-col-rt flex-fill">
+                                        <div class="row-blc checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Male</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Femaile</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Undifferentiated</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">unknown</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Ethnicity
+                                    </label>
+                                    <div class="form-col-rt flex-fill">
+                                        <div class="row-blc checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Hispanic/Latino</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Not Hispanic/Latino</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Unknown</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Race
+                                    </label>
+                                    <div class="form-col-rt flex-fill">
+                                        <div class="row-blc checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">White</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Black</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Asian</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">American Indian, or Alaskan</span>
+                                            </label>
+                                        </div>
+                                        <div class="row-blc checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">American Indian</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Native, Native Hawaiian or other Pacific
+                                                    Islander</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        If Asian, check all that apply
+                                    </label>
+                                    <div class="form-col-rt flex-fill">
+                                        <div class="row-blc checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Japanese</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Chinese</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Korean</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Taiwanese</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Other, Specifiy
+                                    </label>
+                                    <div class="form-col-rt flex-fill flex-fill">
+                                        <div class="form-group">
+                                            <textarea type="text" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Niotine and Alcohol Use
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Cigarette Use
+                                    </label>
+                                    <div class="form-col-rt flex-fill">
+                                        <div class="row-blc">
+                                            <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                                <label class="checkbox-cell d-flex align-items-center">
+                                                    <input type="checkbox" name="yes" class="position-absolute" />
+                                                    <span
+                                                        class="d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-check"></span>
+                                                    </span>
+                                                    <span class="txt">Unknown</span>
+                                                </label>
+                                                <label class="checkbox-cell d-flex align-items-center">
+                                                    <input checked type="checkbox" name="no"
+                                                        class="position-absolute" />
+                                                    <span
+                                                        class="d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-check"></span>
+                                                    </span>
+                                                    <span class="txt">Never</span>
+                                                </label>
+                                                <label class="checkbox-cell d-flex align-items-center">
+                                                    <input checked type="checkbox" name="no"
+                                                        class="position-absolute" />
+                                                    <span
+                                                        class="d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-check"></span>
+                                                    </span>
+                                                    <span class="txt">Current</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row-blc input-lbl-col d-flex align-items-center">
+                                            <label>
+                                                Former: Stop Date
+                                            </label>
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-calendar"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Number of Years Smoked
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Number of Cigarettes per Day
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Pack Years
+                                    </label>
+                                    <div class="form-col-rt flex-fill">
+                                        <div class="form-elem-col calendar-inputs d-flex align-items-center">
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Alcohol Use
+                                    </label>
+                                    <div class="form-col-rt flex-fill">
+                                        <div class="row-blc">
+                                            <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                                <label class="checkbox-cell d-flex align-items-center">
+                                                    <input type="checkbox" name="yes" class="position-absolute" />
+                                                    <span
+                                                        class="d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-check"></span>
+                                                    </span>
+                                                    <span class="txt">Unknown</span>
+                                                </label>
+                                                <label class="checkbox-cell d-flex align-items-center">
+                                                    <input checked type="checkbox" name="no"
+                                                        class="position-absolute" />
+                                                    <span
+                                                        class="d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-check"></span>
+                                                    </span>
+                                                    <span class="txt">Never</span>
+                                                </label>
+                                                <label class="checkbox-cell d-flex align-items-center">
+                                                    <input checked type="checkbox" name="no"
+                                                        class="position-absolute" />
+                                                    <span
+                                                        class="d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-check"></span>
+                                                    </span>
+                                                    <span class="txt">Current</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row-blc input-lbl-col d-flex align-items-center">
+                                            <label>
+                                                Former: Stop Date
+                                            </label>
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-calendar"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Number of Drinks
+                                    </label>
+                                    <div class="form-col-rt flex-fill">
+                                        <div class="row-blc">
+                                            <div class="input-elem-list d-flex flex-wrap align-items-center">
+                                                <div class="input-elem-cell input2">
+                                                    <input type="text" class="form-control" placeholder="Per day">
+                                                </div>
+                                                <div class="input-elem-cell input2">
+                                                    <input type="text" class="form-control" placeholder="Per Week">
+                                                </div>
+                                                <div class="input-elem-cell input2">
+                                                    <input type="text" class="form-control" placeholder="Occasional">
+                                                </div>
+                                                <div
+                                                    class="input-and-check-group input-elem-cell d-flex align-items-center">
+                                                    <div class="input-elem-cell input2">
+                                                        <input type="number" class="form-control" placeholder="CF">
+                                                    </div>
+                                                    <div class="input-elem-cell">
+                                                        <label class="checkbox-cell no-label d-flex align-items-center">
+                                                            <input checked type="checkbox" name="teleHealth"
+                                                                class="position-absolute" />
+                                                            <span
+                                                                class="d-inline-flex align-items-center justify-content-center icon mr-0">
+                                                                <span class="icon-check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="input-and-check-group input-elem-cell d-flex align-items-center">
+                                                    <div class="input-elem-cell input2">
+                                                        <input type="number" class="form-control" placeholder="Height">
+                                                    </div>
+                                                    <div class="input-elem-cell">
+                                                        <label class="checkbox-cell no-label d-flex align-items-center">
+                                                            <input checked type="checkbox" name="teleHealth"
+                                                                class="position-absolute" />
+                                                            <span
+                                                                class="d-inline-flex align-items-center justify-content-center icon mr-0">
+                                                                <span class="icon-check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="input-and-check-group input-elem-cell d-flex align-items-center">
+                                                    <div class="input-elem-cell input2">
+                                                        <input type="number" class="form-control"
+                                                            placeholder="Temprature">
+                                                    </div>
+                                                    <div class="input-elem-cell">
+                                                        <label class="checkbox-cell no-label d-flex align-items-center">
+                                                            <input checked type="checkbox" name="teleHealth"
+                                                                class="position-absolute" />
+                                                            <span
+                                                                class="d-inline-flex align-items-center justify-content-center icon mr-0">
+                                                                <span class="icon-check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="input-elem-cell input2">
+                                                    <input type="text" class="form-control" placeholder="BMI">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Physical Exam Performed
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Vital Signs Performed
+                                    </label>
+                                    <div class="form-col-rt flex-fill form-elem-col-rw d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-elem-col calendar-inputs d-flex align-items-center">
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-calendar"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-clock-line"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <div class="label-cell">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="remember" class="position-absolute"
+                                                formControlName="remember">
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Vital Signs</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Site
+                                    </label>
+                                    <div class="form-col-rt flex-fill form-elem-col-rw d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">left arm</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Right arm</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-elem-col calendar-inputs d-flex align-items-center">
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-calendar"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-clock-line"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Method
+                                    </label>
+                                    <div class="form-col-rt flex-fill form-elem-col-rw d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">automatic</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">manual</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-elem-col calendar-inputs d-flex align-items-center">
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-calendar"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-clock-line"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-section-ttl primary">
+                            <h3>
+                                Reading 1
+                            </h3>
+                            <div class="section-inner">
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Actual time of measurement (24 hour clock)
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Systolic
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Diastolic
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Heart Rate
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Respiration Rate
+                                    </label>
+                                    <div class="form-col-rt flex-fill flex-fill">
+                                        <div class="form-group">
+                                            <textarea type="text" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Cardiovascular risk Assessment
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Blood Collection (includes processing/shipping)
+                                    </label>
+                                    <div class="form-col-rt flex-fill form-elem-col-rw d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-elem-col calendar-inputs d-flex align-items-center">
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-calendar"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-clock-line"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Fasting
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        If yes, date of last meal
+                                    </label>
+                                    <div class="form-col-rt flex-fill">
+                                        <div class="calendar-inputs d-flex align-items-center">
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-calendar"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-clock-line"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Is participant biologically capable of having children?
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Gender
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Male</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Femaile</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        SF-Health Survey
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Wells Score for DVT
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Infusion of IMP (infusion may take 2-5 days in the first period, 2 days in the
+                                        extension period
+                                    </label>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Concomitant Medications
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Adverse Events
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Study Coordinator/Nurse Fee - Complex Visit - Infusion days may take 2-5 days, 2
+                                        days in the Extension Period
+                                    </label>
+                                    <div class="form-col-rt flex-fill form-elem-col-rw d-flex align-items-center">
+                                        <div class="form-elem-col">
+                                            <div class="form-group">
+                                                <select class="form-select form-control dropdown-opt-cell" id="source"
+                                                    aria-label="Default select example">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Principal Investigator Fee Complex Visits
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Pharmacy Complex
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Patient Reimbursement
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-section-ttl primary">
+                            <h3>
+                                Contraception Details
+                            </h3>
+                            <div class="section-inner">
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        IUD
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Actual time of measurement (24 hour clock)
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Systolic
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Diastolic
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Heart Rate
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Respiration Rate
+                                    </label>
+                                    <div class="form-col-rt flex-fill flex-fill">
+                                        <div class="form-group">
+                                            <textarea type="text" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Cardiovascular risk Assessment
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Blood Collection (includes processing/shipping)
+                                    </label>
+                                    <div class="form-col-rt flex-fill form-elem-col-rw d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-elem-col calendar-inputs d-flex align-items-center">
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-calendar"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-clock-line"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Fasting
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        If yes, date of last meal
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div class="calendar-inputs d-flex align-items-center">
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-calendar"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-cell right d-flex position-relative">
+                                                    <span
+                                                        class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                        <span class="icon-clock-line"></span>
+                                                    </span>
+                                                    <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Is participant biologically capable of having children?
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Gender
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Male</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Femaile</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        SF-Health Survey
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Wells Score for DVT
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex input-elem-list align-items-center">
+                                        <div class="input-elem-cell input ">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Infusion of IMP (infusion may take 2-5 days in the first period, 2 days in the
+                                        extension period
+                                    </label>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Concomitant Medications
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Adverse Events
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Study Coordinator/Nurse Fee - Complex Visit - Infusion days may take 2-5 days, 2
+                                        days in the Extension Period
+                                    </label>
+                                    <div class="form-col-rt flex-fill form-elem-col-rw d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <div class="form-group">
+                                                <select class="form-select form-control  dropdown-opt-cell" id="source"
+                                                    aria-label="Default select example">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Principal Investigator Fee Complex Visits
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Pharmacy Complex
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-blc-rw d-flex align-items-center">
+                                    <label>
+                                        Patient Reimbursement
+                                    </label>
+                                    <div class="form-col-rt flex-fill d-flex align-items-center">
+                                        <div
+                                            class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input type="checkbox" name="yes" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">Yes</span>
+                                            </label>
+                                            <label class="checkbox-cell d-flex align-items-center">
+                                                <input checked type="checkbox" name="no" class="position-absolute" />
+                                                <span
+                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-check"></span>
+                                                </span>
+                                                <span class="txt">No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Postmenopausal
+                                </label>
+                                <div class="form-col-rt">
+                                    <div class="calendar-inputs d-flex align-items-center">
+                                        <div class="form-group">
+                                            <div class="input-cell right d-flex position-relative">
+                                                <span
+                                                    class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-calendar"></span>
+                                                </span>
+                                                <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-cell right d-flex position-relative">
+                                                <span
+                                                    class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-calendar"></span>
+                                                </span>
+                                                <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Condom with spermicide
+                                </label>
+                                <div class="form-col-rt flex-fill">
+                                    <div class="calendar-inputs d-flex align-items-center">
+                                        <div class="form-group">
+                                            <div class="input-cell right d-flex position-relative">
+                                                <span
+                                                    class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-calendar"></span>
+                                                </span>
+                                                <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-cell right d-flex position-relative">
+                                                <span
+                                                    class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-calendar"></span>
+                                                </span>
+                                                <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Sponge
+                                </label>
+                                <div class="form-col-rt flex-fill">
+                                    <div class="calendar-inputs">
+                                        <div class="form-group">
+                                            <div class="d-flex position-relative">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Oral Contraceptives
+                                </label>
+                                <div class="form-col-rt flex-fill">
+                                    <div class="calendar-inputs d-flex align-items-center">
+                                        <div class="form-group">
+                                            <div class="input-cell right d-flex position-relative">
+                                                <span
+                                                    class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-calendar"></span>
+                                                </span>
+                                                <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-cell right d-flex position-relative">
+                                                <span
+                                                    class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-calendar"></span>
+                                                </span>
+                                                <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Depo Injectable
+                                </label>
+                                <div class="form-col-rt flex-fill">
+                                    <div class="calendar-inputs d-flex">
+                                        <div class="form-group">
+                                            <div class="input-cell right d-flex position-relative">
+                                                <span
+                                                    class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-calendar"></span>
+                                                </span>
+                                                <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                    class="form-control">
+                                            </div>
+                                            <span class="link-txt text-primary2 mt-2">
+                                                Date of last injection
+                                            </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-cell right d-flex position-relative">
+                                                <span
+                                                    class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                    <span class="icon-calendar"></span>
+                                                </span>
+                                                <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Other Method
+                                </label>
+                                <div class="form-col-rt flex-fill flex-fill">
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Pregnancy test
+                                </label>
+                                <div class="form-col-rt flex-fill d-flex align-items-center">
+                                    <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="yes" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Yes</span>
+                                        </label>
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input checked type="checkbox" name="no" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Core Set Measures
+                                </label>
+                                <div class="form-col-rt flex-fill d-flex align-items-center">
+                                    <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="yes" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Yes</span>
+                                        </label>
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input checked type="checkbox" name="no" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    CDASI
+                                </label>
+                                <div class="form-col-rt flex-fill d-flex align-items-center">
+                                    <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="yes" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Yes</span>
+                                        </label>
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input checked type="checkbox" name="no" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    SF-Health Survey
+                                </label>
+                                <div class="form-col-rt flex-fill d-flex align-items-center">
+                                    <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="yes" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Yes</span>
+                                        </label>
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input checked type="checkbox" name="no" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Wells Score for DVT
+                                </label>
+                                <div class="form-col-rt flex-fill">
+                                    <div class="calendar-inputs d-flex align-items-center">
+                                        <div class="form-group">
+                                            <div class="d-flex position-relative">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Concomitant Medications
+                                </label>
+                                <div class="form-col-rt flex-fill d-flex align-items-center">
+                                    <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="yes" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Yes</span>
+                                        </label>
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input checked type="checkbox" name="no" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Adverse Events
+                                </label>
+                                <div class="form-col-rt flex-fill d-flex align-items-center">
+                                    <div class="checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="yes" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Yes</span>
+                                        </label>
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input checked type="checkbox" name="no" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Study Coordinator/Nurse Fee - Complex Visit - Infusion days may take 2-5 days, 2
+                                    days in the Extension Period
+                                </label>
+                                <div class="form-col-rt flex-fill form-elem-col-rw d-flex align-items-center">
+                                    <div class="form-elem-col">
+                                        <div class="form-group">
+                                            <select class="form-select form-control" id="source"
+                                                aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="yes" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Yes</span>
+                                        </label>
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input checked type="checkbox" name="no" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Principal Investigator Fee Complex Visits
+                                </label>
+                                <div class="form-col-rt flex-fill form-elem-col-rw d-flex align-items-center">
+                                    <div class="form-elem-col">
+                                        <div class="form-group">
+                                            <select class="form-select form-control" id="source"
+                                                aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="yes" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Yes</span>
+                                        </label>
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input checked type="checkbox" name="no" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Pharmacy Complex
+                                </label>
+                                <div class="form-col-rt flex-fill d-flex align-items-center">
+                                    <div class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="yes" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Yes</span>
+                                        </label>
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input checked type="checkbox" name="no" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-blc-rw d-flex align-items-center">
+                                <label>
+                                    Patient Reimbursement
+                                </label>
+                                <div class="form-col-rt flex-fill d-flex align-items-center">
+                                    <div class="form-elem-col checkbox-cell-list d-flex flex-wrap  align-items-center">
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input type="checkbox" name="yes" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">Yes</span>
+                                        </label>
+                                        <label class="checkbox-cell d-flex align-items-center">
+                                            <input checked type="checkbox" name="no" class="position-absolute" />
+                                            <span class="d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-check"></span>
+                                            </span>
+                                            <span class="txt">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-row text-end form-btns">
+                        <button class="btn btn-primary">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Temporary Modal View Section start -->
+        <section class="section-row">
+            <button type="button" class="btn btn-primary" (click)="openModal()">
+                View Coasting Modal
+            </button>
+        </section>
+        <!-- Temporary Modal View Section end -->
+    </section>
+</div>

@@ -1,0 +1,263 @@
+<div class="page-inner">
+    <section class="section-row breif-col-rw2">
+        <app-breif-cards></app-breif-cards>
+    </section>
+    <section class="section-row dash-graph-rw">
+        <section class="md row row-lg">
+            <div class="col-xl-4 dash-graph-col">
+                <div class="card-wrapper card-collapse flat md d-flex flex-column overflow-auto"
+                    [ngClass]="{'active': isCollapsed}">
+                    <div class="head-blc d-flex align-items-center">
+                        <h2>Study Status</h2>
+                        <div class="right-col ms-auto">
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none p-0 d-inline-flex align-items-center justify-content-center toggle-btn"
+                                (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+                                aria-controls="collapseBasic">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none  p-0 d-inline-flex align-items-center justify-content-center close-btn">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collpase-body" id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+                        <div class="inner-body padd overflow-auto">
+                            Study Status
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 dash-graph-col">
+                <div class="card-wrapper card-collapse flat md d-flex flex-column overflow-auto"
+                    [ngClass]="{'active': isCollapsed2}">
+                    <div class="head-blc d-flex align-items-center">
+                        <h2>Financial Status</h2>
+                        <div class="right-col ms-auto">
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none p-0 d-inline-flex align-items-center justify-content-center toggle-btn"
+                                (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed2">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none  p-0 d-inline-flex align-items-center justify-content-center close-btn">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collpase-body" id="collapseBasic3" [collapse]="isCollapsed2" [isAnimated]="true">
+                        <div class="inner-body padd overflow-auto">
+                            Financial Status
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 dash-graph-col">
+                <div class="card-wrapper card-collapse flat md d-flex flex-column overflow-auto"
+                    [ngClass]="{'active': isCollapsed3}">
+                    <div class="head-blc d-flex align-items-center">
+                        <h2>Potential Studies</h2>
+                        <div class="right-col ms-auto">
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none p-0 d-inline-flex align-items-center justify-content-center toggle-btn"
+                                (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                            <button type="button"
+                                class="btn btn-link shadow-none text-decoration-none  p-0 d-inline-flex align-items-center justify-content-center close-btn">
+                                <span class="d-inline-flex justify-content-center position-relative"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collpase-body" id="collapseBasic3" [collapse]="isCollapsed3" [isAnimated]="true">
+                        <div class="inner-body padd overflow-auto">
+                            Potential Studies
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="section-row md row row-lg">
+        <div class="col-lg-6 dash-graph-col  dash-graph-col-list">
+            <div class="card-wrapper card-collapse flat md d-flex flex-column overflow-auto"
+                [ngClass]="{'active': isCollapsed4}">
+                <div class="head-blc d-flex align-items-center">
+                    <h2>Reminders</h2>
+                    <div class="right-col ms-auto">
+                        <button type="button"
+                            class="btn btn-link shadow-none text-decoration-none p-0 d-inline-flex align-items-center justify-content-center toggle-btn"
+                            (click)="isCollapsed4 = !isCollapsed4" [attr.aria-expanded]="!isCollapsed4">
+                            <span class="d-inline-flex justify-content-center position-relative"></span>
+                        </button>
+                        <button type="button"
+                            class="btn btn-link shadow-none text-decoration-none  p-0 d-inline-flex align-items-center justify-content-center close-btn">
+                            <span class="d-inline-flex justify-content-center position-relative"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collpase-body" id="collapseBasic3" [collapse]="isCollapsed4" [isAnimated]="true">
+                    <div class="inner-body padd overflow-auto">
+                        <div class="reminder-list">
+                            <div class="row-blc">
+                                <h3 class="text-primary">TODAY</h3>
+                                <div class="item-list">
+                                    <div class="item">
+                                        <h4>Friday 13 May, 2021</h4>
+                                        <h5>Praesent ut ex blandit, feugiat elit quis, sollicitudin elit</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-blc">
+                                <h3 class="text-primary">LATER THIS WEEK</h3>
+                                <div class="item-list">
+                                    <div class="item">
+                                        <h4>Monday 16 Dec, 2021</h4>
+                                        <h5>Donec at lorem ac purus commodo venenatis</h5>
+                                    </div>
+                                    <div class="item">
+                                        <h4>Wed 25 Dec, 2021</h4>
+                                        <h5>Integer vestibulum libero quis nisl tempus lacinia</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 dash-graph-col  dash-graph-col-list">
+            <div class="card-wrapper card-collapse flat md d-flex flex-column overflow-auto"
+                [ngClass]="{'active': isCollapsed5}">
+                <div class="head-blc d-flex align-items-center">
+                    <h2>Task List</h2>
+                    <div class="right-col ms-auto">
+                        <button type="button"
+                            class="btn btn-link shadow-none text-decoration-none p-0 d-inline-flex align-items-center justify-content-center toggle-btn"
+                            (click)="isCollapsed5 = !isCollapsed5" [attr.aria-expanded]="!isCollapsed5">
+                            <span class="d-inline-flex justify-content-center position-relative"></span>
+                        </button>
+                        <button type="button"
+                            class="btn btn-link shadow-none text-decoration-none  p-0 d-inline-flex align-items-center justify-content-center close-btn">
+                            <span class="d-inline-flex justify-content-center position-relative"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collpase-body" id="collapseBasic3" [collapse]="isCollapsed5" [isAnimated]="true">
+                    <div class="inner-body padd overflow-auto">
+                        <div class="task-list">
+                            <div class="item d-flex">
+                                <span class="text">
+                                    In et nibh id lacus dapibus molestie
+                                </span>
+                                <span class="time text-primary ms-auto">
+                                    Today
+                                </span>
+                            </div>
+                            <div class="item d-flex">
+                                <span class="text">
+                                    In et nibh id lacus dapibus molestie
+                                </span>
+                                <span class="time text-primary ms-auto">
+                                    Tomorrow
+                                </span>
+                            </div>
+                            <div class="item d-flex">
+                                <span class="text">
+                                    In et nibh id lacus dapibus molestie
+                                </span>
+                                <span class="time text-primary ms-auto">
+                                    11 My 2021
+                                </span>
+                            </div>
+                            <div class="item d-flex">
+                                <span class="text">
+                                    In et nibh id lacus dapibus molestie
+                                </span>
+                                <span class="time text-primary ms-auto">
+                                    Today
+                                </span>
+                            </div>
+                            <div class="item d-flex">
+                                <span class="text">
+                                    In et nibh id lacus dapibus molestie
+                                </span>
+                                <span class="time text-primary ms-auto">
+                                    Tomorrow
+                                </span>
+                            </div>
+                            <div class="item d-flex">
+                                <span class="text">
+                                    In et nibh id lacus dapibus molestie
+                                </span>
+                                <span class="time text-primary ms-auto">
+                                    11 My 2021
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-row md">
+        <div class="card-wrapper">
+            <div class="head-blc d-flex align-items-center">
+                <h2>Calendar</h2>
+                <div class="right-col ms-auto">
+                    <a href="" class="text-decoration-underline">Schedule</a>
+                </div>
+            </div>
+            <div class="inner-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Organization Name</th>
+                                <th scope="col">Contact Name</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Email</th>
+                                <th scope="col" class="action-col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of tempItem">
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <span
+                                            class="icons-cell d-flex align-items-center justify-content-center rounded-circle">
+                                            <img class="img-fluid" src="../../../../../assets/images/listing-logo.png"
+                                                alt="Logo" />
+                                        </span>
+                                        Mindful Medical
+                                    </div>
+
+                                </td>
+                                <td>Philippe Bayock</td>
+                                <td>202-555-0138</td>
+                                <td>mindfulmedical@gmail.com</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <a href="#" class="edit">
+                                            <span class="icon-edit"></span>
+                                        </a>
+                                        <a href="#" class="database">
+                                            <span class="icon-database"></span>
+                                        </a>
+                                        <a href="#" class="mail">
+                                            <span class="icon-envelope-email"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="foot-blc text-end">
+                <a href="#">View All Organizations</a>
+            </div>
+        </div>
+    </section>
+</div>

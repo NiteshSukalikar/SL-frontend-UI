@@ -1,0 +1,112 @@
+@import "../scss/theme/variables";
+.modal-tabs {
+  .nav-tabs {
+    overflow: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  .modal-top-btns {
+    a {
+      font-size: 17px;
+      padding: 10px;
+      color: #707070;
+      &:hover {
+        color: $primary;
+      }
+    }
+    .print-btn {
+      img {
+        width: 18px;
+        opacity: 0.5;
+      }
+    }
+  }
+  .modal-head-rw {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      border-bottom: 1px solid #c8c8c8;
+    }
+    &:before {
+      bottom: 5px;
+    }
+    h2 {
+      font-size: 50px;
+      font-weight: 300;
+      margin-bottom: 0;
+      @media (max-width: 767px) {
+        font-size: 30px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .nav-tabs {
+    border-color: transparent;
+    margin-bottom: 10px;
+    .nav-item {
+      .nav-link {
+        border-color: transparent;
+        color: $base-color;
+        margin-bottom: 0;
+        &:hover {
+          color: $primary;
+        }
+        * {
+          cursor: pointer;
+        }
+      }
+      .nav-link.active {
+        color: $primary2;
+      }
+    }
+  }
+  .table > :not(:last-child) > :last-child > * {
+    border-bottom-color: transparent;
+  }
+  .table {
+    border: 1px solid rgba(112, 112, 112, 0.5);
+    tr {
+      th {
+        background-color: rgba(229, 229, 229, 0.5);
+        color: $base-color;
+        &:first-child {
+          text-align: center;
+        }
+        // &:last-child {
+        //   text-align: center;
+        // }
+      }
+      td {
+        &:first-child {
+          text-align: center;
+        }
+        &:last-child {
+          // text-align: center;
+          white-space: nowrap;
+        }
+        .amount-lbl {
+          font-size: 14px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:hover {
+          background-color: rgba(229, 229, 229, 0.4);
+        }
+      }
+    }
+  }
+  .table tr th,
+  .table tr td {
+    border: 1px solid rgba(219, 210, 210, 1);
+    color: #7b7c7e;
+    padding: 10px 20px;
+  }
+}

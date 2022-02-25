@@ -1,0 +1,162 @@
+<div class="page-inner">
+  <section class="section-row">
+    <div class="card-wrapper flat">
+      <div class="head-blc d-flex align-items-center">
+        <h2>Add Email Template</h2>
+        <div class="right-col ms-auto">
+          <button routerLink="/user/manage-email" class="btn btn-btn-link back-btn d-inline-flex align-items-center">
+            <span class="icon-arrow-left"></span>
+            Back
+          </button>
+        </div>
+      </div>
+      <div class="inner-body">
+        <div class="tab-wrapper">
+          <tabset>
+            <tab>
+              <ng-template tabHeading>
+                <span class="d-inline-flex flex-column text-center">
+                  <span class="icon-user icons-cell">
+                  </span>
+                  <label>
+                    Email Template
+                  </label>
+                </span>
+              </ng-template>
+              <form [formGroup]="EmailForm">
+                <div class="tab-inner">
+                  <div class="section-row">
+                    <div class="form-wrapper">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="emailTemplateName">
+                              Email Template Name<span class="text-danger">*</span>
+                            </label>
+                            <input id="emailTemplateName" type="text" name="emailTemplateName"
+                              formControlName="emailTemplateName" class="form-control">
+                            <div *ngIf="submitted && EmailForm.controls.emailTemplateName.errors" class="text-danger">
+                              <div class="text-danger" *ngIf="EmailForm.controls.emailTemplateName.errors?.required">
+                                Email Template Name is required.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="emailTemplateType">
+                              Email Template Type<span class="text-danger">*</span>
+                            </label>
+                            <select id="emailTemplateType" name="emailTemplateType" 
+                              formControlName="emailTemplateType" class="form-select form-control">
+                              <option value="1">Superadmin</option>
+                              <option value="2">Organization</option>
+                              <option value="3">Sponsor</option>
+                              <option value="4">Principal Investigator</option>
+                              <option value="5">Participant</option>
+                            </select>
+                            <div *ngIf="submitted && EmailForm.controls.emailTemplateType.errors" class="text-danger">
+                              <div class="text-danger" *ngIf="EmailForm.controls.emailTemplateType.errors?.required">
+                                Email Template Type is required.
+                              </div>
+                            </div>
+                          </div>
+                        </div>  
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="emailTemplateSenderName">
+                              Email Template Sender Name<span class="text-danger">*</span>
+                            </label>
+                            <input id="emailTemplateSenderName" type="text" name="emailTemplateSenderName"
+                              formControlName="emailTemplateSenderName" class="form-control">
+                            <div *ngIf="submitted && EmailForm.controls.emailTemplateSenderName.errors"
+                              class="text-danger">
+                              <div class="text-danger"
+                                *ngIf="EmailForm.controls.emailTemplateSenderName.errors?.required">
+                                Email Template Sender Name is required.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="emailTemplateSenderEmailAddress">
+                              Email Template Sender Email<span class="text-danger">*</span>
+                            </label>
+                            <input id="emailTemplateSenderEmailAddress" type="text" name="emailTemplateSenderEmailAddress"
+                              formControlName="emailTemplateSenderEmailAddress" class="form-control">
+                            <div *ngIf="submitted && EmailForm.controls.emailTemplateSenderEmailAddress.errors" class="text-danger">
+                              <div class="text-danger" *ngIf="EmailForm.controls.emailTemplateSenderEmailAddress.errors?.required">
+                                Email Template Sender Email Address is required.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="emailTemplateSubject">
+                              Email Template Subject<span class="text-danger">*</span>
+                            </label>
+                            <input id="emailTemplateSubject" type="text" name="emailTemplateSubject"
+                              formControlName="emailTemplateSubject" class="form-control">
+                            <div *ngIf="submitted && EmailForm.controls.emailTemplateSubject.errors"
+                              class="text-danger">
+                              <div class="text-danger" *ngIf="EmailForm.controls.emailTemplateSubject.errors?.required">
+                                Email Template Subject is required.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="emailTemplateDescription">
+                              Email Template Description<span class="text-danger">*</span>
+                            </label>
+                            <input id="emailTemplateDescription" type="text" name="emailTemplateDescription"
+                              formControlName="emailTemplateDescription" class="form-control">
+                            <div *ngIf="submitted && EmailForm.controls.emailTemplateDescription.errors"
+                              class="text-danger">
+                              <div class="text-danger" *ngIf="EmailForm.controls.emailTemplateDescription.errors?.required">
+                                Email Template Description is required.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="emailTemplateBody">
+                              Email Body<span class="text-danger">*</span>
+                            </label>
+                            <!-- <textarea id="emailTemplateDescription" rows="4" type="text" name="emailTemplateDescription" formControlName="emailTemplateDescription"
+                              class="form-control"></textarea> -->                             
+                              <angular-editor formControlName="emailTemplateBody" [config]="config"></angular-editor>
+                            <div *ngIf="submitted && EmailForm.controls.emailTemplateBody.errors" class="text-danger">
+                              <div class="text-danger" *ngIf="EmailForm.controls.emailTemplateBody.errors?.required">
+                                Email Body is required.
+                              </div>
+                            </div>
+                         
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-end form-btns">
+                      <button  class="btn btn-primary" type="button" (click)="onSubmit('save')" *ngIf="!isEdit">
+                        Save
+                      </button>
+                    </div>
+                    <div class="text-end form-btns" *ngIf="isEdit" (click)="onSubmit('update')">
+                      <button  class="btn btn-primary">
+                        Update
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </tab>
+          </tabset>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

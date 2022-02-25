@@ -1,0 +1,111 @@
+<div class="page-inner layout-md">
+    <section class="section-row">
+        <div class="card-wrapper">
+            <div class="head-blc">
+                <h2>Manage Principal Invites</h2>
+            </div>
+            <div class="inner-body padd2">
+                <div class="tab-wrapper">
+                    <tabset class="tab-nav-start tab-content-padd-type2">
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <label>
+                                        PI Invites
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                <section class="section-row">
+                                    <div class="card-wrapper3">
+                                        <div class="inner-body">
+                                            <div class="row">
+                                                <div class="col-md-6 col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="keywords">Keywords</label>
+                                                        <input type="text" name="keywords" id="keywords"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="piName">PI Name</label>
+                                                        <input type="text" name="piName" id="piName"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="studyName">Study name</label>
+                                                        <input type="mail" name="studyName" id="studyName"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="piExperience">PI experience</label>
+                                                        <input type="text" name="piExperience" id="studyName"
+                                                            class="form-control">
+                                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="visit">Previous worked on any visit</label>
+                                                        <div class="d-flex">
+                                                            <label class="checkbox-cell with-form-lbl type2 d-flex">
+                                                                <input checked type="checkbox" name="remember"
+                                                                    class="position-absolute" />
+                                                                <span
+                                                                    class="d-inline-flex align-items-center justify-content-center icon">
+                                                                    <span class="icon-check"></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="form-group form-btns multiple text-end mb-0">
+                                                        <button class="btn btn-primary">
+                                                            Accept
+                                                        </button>
+                                                        <button class="btn btn-primary">
+                                                            Search
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="section-row">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-4 d-flex" *ngFor="let i of item">
+                                            <app-profile-breif-card class="d-flex flex-fill"></app-profile-breif-card>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tab>
+                        <tab>
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <label>
+                                        History
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+
+                            </div>
+                        </tab>
+                    </tabset>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

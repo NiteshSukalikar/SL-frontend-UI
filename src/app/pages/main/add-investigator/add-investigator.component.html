@@ -1,0 +1,357 @@
+<div class="page-inner">
+    <section class="section-row">
+        <div class="card-wrapper flat">
+            <div class="head-blc d-flex align-items-center">
+                <h2>Add Principal Investigator</h2>
+                <div class="right-col ms-auto">
+                    <button routerLink="/user/manage-investigator"
+                        class="btn btn-btn-link back-btn d-inline-flex align-items-center">
+                        <span class="icon-arrow-left"></span>
+                        Back
+                    </button>
+                </div>
+            </div>
+            <div class="inner-body">
+                <div class="tab-wrapper">
+                    <tabset>
+                        <tab [active]="activeTab">
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <span class="icon-user icons-cell">
+                                    </span>
+                                    <label>
+                                        Principal Investigator Information
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <form [formGroup]="PIForm">
+                                <div class="tab-inner">
+                                    <div class="section-row">
+                                        <div class="section-ttl">
+                                            <h2>Principal Investigator Information</h2>
+                                        </div>
+
+                                        <div class="form-wrapper">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="organizationName">
+                                                            Principal Investigator Name<span
+                                                                class="text-danger">*</span>
+                                                        </label>
+                                                        <input id="organizationName" type="text" name="name1"
+                                                            formControlName="organizationName" class="form-control">
+                                                        <div *ngIf="submitted && PIForm.controls.organizationName.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="PIForm.controls.organizationName.errors?.required">
+                                                                PI Name is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="businessName">
+                                                            Business Name<span class="text-danger">*</span>
+                                                        </label>
+                                                        <input id="businessName" type="businessName" name="name1"
+                                                            formControlName="businessName" class="form-control">
+                                                        <div *ngIf="submitted && PIForm.controls.businessName.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="PIForm.controls.businessName.errors?.required">
+                                                                Business Name is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="address">
+                                                            Address<span class="text-danger">*</span>
+                                                        </label>
+                                                        <input id="address" type="text" name="address"
+                                                            formControlName="address" class="form-control">
+                                                        <div *ngIf="submitted && PIForm.controls.address.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="PIForm.controls.address.errors?.required">
+                                                                Address is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="emailAddress">
+                                                            Email<span class="text-danger">*</span>
+                                                        </label>
+                                                        <input id="emailAddress" type="email" name="emailAddress"
+                                                            formControlName="emailAddress" class="form-control">
+                                                        <div *ngIf="submitted && PIForm.controls.emailAddress.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="PIForm.controls.emailAddress.errors?.required">
+                                                                Email Address is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="Country">
+                                                            Country<span class="text-danger">*</span>
+                                                        </label>
+                                                        <select class="form-select form-control" id="country"
+                                                            (change)="selectCountry($event)"
+                                                            formControlName="countryID">
+                                                            <option *ngFor="let CountryItem of CountryList"
+                                                                [value]="CountryItem.countryId">
+                                                                {{CountryItem?.countryName}}</option>
+                                                        </select>
+                                                        <div *ngIf="submitted && PIForm.controls.countryID.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="PIForm.controls.countryID.errors?.required">
+                                                                Country is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="state">
+                                                            State<span class="text-danger">*</span>
+                                                        </label>
+                                                        <select class="form-select form-control" id="state"
+                                                            [attr.disabled]="isStateDisabled ? '' : null"
+                                                            formControlName="stateName">
+                                                            <option *ngFor="let StateItem of StateList"
+                                                                [value]="StateItem.stateName">{{StateItem?.stateName}}
+                                                            </option>
+                                                        </select>
+                                                        <div *ngIf="submitted && PIForm.controls.stateName.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="PIForm.controls.stateName.errors?.required">
+                                                                State is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="city">
+                                                            City<span class="text-danger">*</span>
+                                                        </label>
+                                                        <input id="city" type="text" name="city"
+                                                            formControlName="cityName" class="form-control">
+                                                        <div *ngIf="submitted && PIForm.controls.cityName.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="PIForm.controls.cityName.errors?.required">
+                                                                city is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="primaryContactNumber">
+                                                            Primary Phone<span class="text-danger">*</span>
+                                                        </label>
+                                                        <input mobilephoneOnly id="primaryContactNumber" type="text"
+                                                            name="primaryContactNumber" maxlength="10"
+                                                            formControlName="primaryContactNumber" class="form-control">
+                                                        <div *ngIf="submitted && PIForm.controls.primaryContactNumber.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="PIForm.controls.primaryContactNumber.errors?.required">
+                                                                Primary Phone is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="secondaryContactNumber">
+                                                            Secondary Phone
+                                                        </label>
+                                                        <input mobilephoneOnly id="secondaryContactNumber" type="text"
+                                                            maxlength="10" name="secondaryContactNumber"
+                                                            formControlName="secondaryContactNumber"
+                                                            class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-row">
+                                        <div class="section-ttl">
+                                            <h2>Sponsor Logo & Favicon</h2>
+                                        </div>
+                                        <div class="form-wrapper">
+                                            <div class="upload-wrapper d-flex">
+                                                <div class="upload-cell">
+                                                    <div
+                                                        class="upload-btn position-relative d-flex flex-column justify-content-center align-items-center">
+                                                        <input type="file" class="position-absolute"
+                                                            [attr.disabled]="!IsViewOnly ? '' : null"
+                                                            (change)="selectFile($event,'Logo')">
+                                                        <div *ngIf="isUploaddoneForLogo"
+                                                            class="inner d-flex flex-column text-center">
+                                                            <span class="icon-arrow-upload">
+                                                            </span>
+                                                            <span class="txt">
+                                                                UPLOAD
+                                                            </span>
+                                                        </div>
+                                                        <ngx-avatar *ngIf="isUploadForLogo" size="100" value="28%"
+                                                            [round]="false" class="clickable"
+                                                            src="{{imagePreviewForLogo}}">
+                                                        </ngx-avatar>
+                                                    </div>
+                                                    <span class="msg">
+                                                        Logo Size (186 x 35) Type: JPG, PNG only
+                                                    </span>
+                                                    <p class="msg" *ngIf="uploadedfileForLogo">
+                                                        {{uploadedfileForLogo.name}} </p>
+                                                </div>
+                                                <div class="upload-cell">
+                                                    <div
+                                                        class="upload-btn position-relative d-flex flex-column justify-content-center align-items-center">
+                                                        <input type="file" class="position-absolute"
+                                                            [attr.disabled]="!IsViewOnly ? '' : null"
+                                                            (change)="selectFile($event,'Fav')">
+                                                        <div *ngIf="isUploaddoneForFab"
+                                                            class="inner d-flex flex-column text-center">
+                                                            <span class="icon-arrow-upload">
+                                                            </span>
+                                                            <span class="txt">
+                                                                UPLOAD
+                                                            </span>
+                                                        </div>
+                                                        <ngx-avatar *ngIf="isUploadForFab" size="100" value="28%"
+                                                            [round]="false" class="clickable"
+                                                            src="{{imagePreviewForFab}}">
+                                                        </ngx-avatar>
+                                                    </div>
+                                                    <span class="msg">
+                                                        Favicon Size (16 x 16) Type: ICO, BMP, JPG, PNG only
+                                                    </span>
+                                                    <p class="msg" *ngIf="uploadedfileForFab">
+                                                        {{uploadedfileForFab.name}} </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div *ngIf="IsViewOnly">
+                                        <div class="text-end form-btns" *ngIf="!isEditSponsor">
+                                            <button (click)="onSubmit('save')" class="btn btn-primary">
+                                                Save
+                                            </button>
+                                        </div>
+                                        <div class="text-end form-btns" *ngIf="isEditSponsor">
+                                            <button (click)="onSubmit('update')" class="btn btn-primary">
+                                                Update
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </tab>
+                        <tab [disabled]="activeTab" [active]="!activeTab">
+                            <ng-template tabHeading>
+                                <span class="d-inline-flex flex-column text-center">
+                                    <span class="icon-user icons-cell">
+                                    </span>
+                                    <label>
+                                        Admin Information
+                                    </label>
+                                </span>
+                            </ng-template>
+                            <div class="tab-inner">
+                                <form [formGroup]="AdminForm">
+                                    <div class="section-row">
+                                        <div class="section-ttl">
+                                            <h2>Contact Person Information</h2>
+                                        </div>
+                                        <div class="form-wrapper">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="firstName">
+                                                            First Name<span class="text-danger">*</span>
+                                                        </label>
+                                                        <input id="firstName" type="text" name="firstName"
+                                                            formControlName="firstName" class="form-control">
+                                                        <div *ngIf="submittedForAdmin && AdminForm.controls.firstName.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="AdminForm.controls.firstName.errors?.required">
+                                                                First Name is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="lastName">
+                                                            Last Name<span class="text-danger">*</span>
+                                                        </label>
+                                                        <input id="lastName" type="lastName" name="lastName"
+                                                            formControlName="lastName" class="form-control">
+                                                        <div *ngIf="submittedForAdmin && AdminForm.controls.lastName.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="AdminForm.controls.lastName.errors?.required">
+                                                                Last Name is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-row">
+                                        <div class="section-ttl">
+                                            <h2>Admin Login Details</h2>
+                                        </div>
+                                        <div class="form-wrapper">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="emailAddress">
+                                                            Email Address<span class="text-danger">*</span>
+                                                        </label>
+                                                        <input id="emailAddress" type="email" name="emailAddress"
+                                                            class="form-control" formControlName="emailAddress">
+                                                        <div *ngIf="submittedForAdmin && AdminForm.controls.emailAddress.errors"
+                                                            class="text-danger">
+                                                            <div class="text-danger"
+                                                                *ngIf="AdminForm.controls.emailAddress.errors?.required">
+                                                                Email Address is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end form-btns">
+                                        <button type="button" (click)="AddAdmin()" class="btn btn-primary">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </tab>
+                    </tabset>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

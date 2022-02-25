@@ -1,0 +1,166 @@
+<div class="page-inner">
+    <div class="card-wrapper">
+        <div class="head-blc">
+            <h2>
+                New Participant
+            </h2>
+        </div>
+        <div class="inner-body padd2">
+            <div class="section-row">
+                <div class="card-wrapper2">
+                    <div class="inner-body layout-md">
+                        <form [formGroup]="participantSearchForm">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" name="firstName" id="firstName" class="form-control"
+                                            formControlName="firstName">
+                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" name="lastName" id="lastName" class="form-control"
+                                            formControlName="lastName">
+                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="mail" name="email" id="email" class="form-control"
+                                            formControlName="email">
+                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="dateRange">Start Date</label>
+                                        <div class="input-cell right d-flex position-relative">
+                                            <span
+                                                class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-calendar-line"></span>
+                                            </span>
+                                            <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                formControlName="date" class="form-control">
+                                        </div>
+                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="dateRange">End Date</label>
+                                        <div class="input-cell right d-flex position-relative">
+                                            <span
+                                                class="position-absolute d-inline-flex align-items-center justify-content-center icon">
+                                                <span class="icon-calendar-line"></span>
+                                            </span>
+                                            <input bsDatepicker type="text" name="dateRange" id="dateRange"
+                                                formControlName="endDate" class="form-control">
+                                        </div>
+                                        <div class="invalid-feedback">This Feild is Required.</div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <label for="source">Source</label>
+                                    <select class="form-select form-control" id="source"
+                                        aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                            </div> -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group form-btns no-label">
+                                        <button class="btn btn-primary" type="button" (click)="searchParticipant()">
+                                            Search
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section-row mb-1">
+                <div class="col-md-12">
+                    <div class="list-btns text-end">
+                        <button class="btn btn-primary" style="font-size:16px" (click)="navigateToAddParticipant()">
+                            Add Participant
+                        </button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Invite Sent</th>
+                                <th scope="col">Status</th>
+                                <th scope="col" class="action-col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let participant of participants">
+                                <td>
+                                    {{participant?.firstName}}
+                                </td>
+                                <td>{{participant?.lastName}}</td>
+                                <td>{{participant?.email}}</td>
+                                <td>{{participant?.inviteDate | date : 'fullDate' : 'India Standard Time' }}</td>
+                                <td>
+                                    <button
+                                        class="btn btn-link toggle-cell shadow-none icon active position-relative overflow-hidden d-inline-flex"
+                                        (click)="blockUnblockParticipant(participant)">
+                                        <span class="toggle-cell-inner w-100 h-100 position-absolute d-inline-flex"
+                                            [ngClass]="{'flip': status}">
+                                            <span class="toggle-cell-rw d-flex h-100">
+                                                <span class="text">
+                                                    {{participant?.isBlocked == true ? 'Block' : 'Unblock'}}
+                                                </span>
+                                                <span
+                                                    [ngClass]="{'icn icon-check bg-danger-dark':participant?.isBlocked  == true, 'icn icon-cross-round bg-secondary': participant?.isBlocked  == false}"></span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="action-cell">
+                                        <!-- <a class="view text-primary-dark" (click)="view(participant)">
+                                            <span class="icon-eye"></span>
+                                        </a> -->
+                                        <a class="delete text-danger" (click)="delete(participant)">
+                                            <span class="icon-trash"></span>
+                                        </a>
+                                        <!-- <a href="#" class="edit text-primary-dark">
+                                            <span class="icon-edit"></span>
+                                        </a> -->
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <div class="d-flex align-items-center pagination-wrapper mt-4">
+                <div class="left mb-2">
+                    Showing 1 to {{participants?.length}} of {{participants?.length}} entries
+                </div>
+                <div class="right d-flex ms-auto mb-2">
+                    <pagination [totalItems]="participants?.length" [(ngModel)]="currentPage"
+                        (pageChanged)="pageChanged($event)">
+                    </pagination>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

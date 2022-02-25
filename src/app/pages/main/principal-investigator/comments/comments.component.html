@@ -1,0 +1,37 @@
+<div class="page-inner layout-md">
+    <section class="section-row">
+        <div class="card-wrapper">
+            <div class="head-blc">
+                <h2>Comments</h2>
+            </div>
+            <div class="inner-body padd2">
+                <div class="comment-wrapper">
+                    <div class="comment-btn-rw text-end">
+                        <button class="btn btn-primary">
+                            Add Comment
+                        </button>
+                    </div>
+                    <div class="comment-list">
+                        <app-comment-block *ngFor="let item of tempItem"></app-comment-block>
+                    </div>
+                    <div class="comment-msg">
+                        <div class="form-group">
+                            <label for="leaveComment">
+                                Leave Comment
+                            </label>
+                            <textarea id="leaveComment" type="text" name="leaveComment" class="form-control"></textarea>
+                            <div class="invalid-feedback">
+                                Field Error Message.
+                            </div>
+                        </div>
+                        <div class="button-rw text-end">
+                            <button class="btn btn-primary">
+                                Post Comment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

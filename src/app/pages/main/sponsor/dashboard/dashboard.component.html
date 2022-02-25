@@ -1,0 +1,146 @@
+<div class="page-inner">
+    <section class="section-row breif-col-rw2">
+        <app-breif-cards></app-breif-cards>
+    </section>
+    <section class="section-row dash-graph-rw">
+        <section class="md row row-lg">
+            <div class="col-xl-4 dash-graph-col">
+                <div class="card-wrapper flat md d-flex flex-column overflow-auto">
+                    <div class="head-blc">
+                        <h2>Total Trials</h2>
+                    </div>
+                    <div class="inner-body padd overflow-auto">
+                        Total Trials
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 dash-graph-col">
+                <div class="card-wrapper flat md d-flex flex-column overflow-auto">
+                    <div class="head-blc">
+                        <h2>Completed Trials</h2>
+                    </div>
+                    <div class="inner-body padd overflow-auto">
+                        Completed Trials
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 dash-graph-col">
+                <div class="card-wrapper flat md d-flex flex-column overflow-auto">
+                    <div class="head-blc">
+                        <h2>Pending Approvals</h2>
+                    </div>
+                    <div class="inner-body padd overflow-auto">
+                        Pending Approvals
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="section-row md row row-lg">
+        <div class="col-lg-4 dash-graph-col">
+            <div class="card-wrapper flat md d-flex flex-column overflow-auto">
+                <div class="head-blc">
+                    <h2>Average Revenue</h2>
+                </div>
+                <div class="inner-body padd overflow-auto">
+                    Average Revenue
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 dash-graph-col">
+            <div class="card-wrapper overflow-auto">
+                <div class="inner-body layout-md">
+                    <div class="table-responsive overflow-auto">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Study code</th>
+                                    <th scope="col">Study Title</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Assignee</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col" class="action-col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of tempItem">
+                                    <td>
+                                        XGY-123
+                                    </td>
+                                    <td>lreom sada</td>
+                                    <td>Site-1</td>
+                                    <td>Robert Jr</td>
+                                    <td>06-09-2021</td>
+                                    <td>
+                                        <button class="btn btn-primary">
+                                            Check Status
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-row md">
+        <div class="card-wrapper">
+            <div class="head-blc d-flex align-items-center">
+                <h2>Calendar</h2>
+                <div class="right-col ms-auto">
+                    <a href="" class="text-decoration-underline">Schedule</a>
+                </div>
+            </div>
+            <div class="inner-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Organization Name</th>
+                                <th scope="col">Contact Name</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Email</th>
+                                <th scope="col" class="action-col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of tempItem">
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <span
+                                            class="icons-cell d-flex align-items-center justify-content-center rounded-circle">
+                                            <img class="img-fluid" src="../../../../../assets/images/listing-logo.png"
+                                                alt="Logo" />
+                                        </span>
+                                        Mindful Medical
+                                    </div>
+
+                                </td>
+                                <td>Philippe Bayock</td>
+                                <td>202-555-0138</td>
+                                <td>mindfulmedical@gmail.com</td>
+                                <td>
+                                    <div class="action-cell">
+                                        <a href="#" class="edit">
+                                            <span class="icon-edit"></span>
+                                        </a>
+                                        <a href="#" class="database">
+                                            <span class="icon-database"></span>
+                                        </a>
+                                        <a href="#" class="mail">
+                                            <span class="icon-envelope-email"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="foot-blc text-end">
+                <a href="#">View All Organizations</a>
+            </div>
+        </div>
+    </section>
+</div>
